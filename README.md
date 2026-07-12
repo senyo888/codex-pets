@@ -2,6 +2,10 @@
 
 # Codex Pets
 
+<img src="site/assets/brand/codex-pets-header.png" alt="Codex Pets orbital-paw brand header" width="100%">
+
+<img src="site/assets/brand/codex-pets-logo.png" alt="Codex Pets orbital-paw logo" width="96">
+
 **Small companions. Serious sprites.**
 
 An independent community catalogue of custom animated pets for the Codex desktop app, packaged with one-click install links and reviewable validation evidence.
@@ -19,7 +23,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 
 *Crystal clarity, clockwork continuity, and two champions of Humidity Intelligence.*
 
-[**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Contributing guide**](CONTRIBUTING.md)
+[**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Brand guide**](docs/brand/BRAND_GUIDE.md) · [**Contributing guide**](CONTRIBUTING.md)
 
 </div>
 
@@ -89,6 +93,9 @@ All four pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published sp
 ```text
 codex-pets/
 ├── catalog.json
+├── docs/brand/
+│   ├── BRAND_GUIDE.md
+│   └── BRAND_PROMPT.md
 ├── pets/
 │   └── <pet-id>/
 │       ├── pet.json
@@ -97,6 +104,7 @@ codex-pets/
 │       ├── README.md
 │       └── qa/
 ├── site/
+│   ├── assets/brand/
 │   └── install/<pet-id>/
 └── CONTRIBUTING.md
 ```
