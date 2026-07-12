@@ -23,7 +23,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 
 *Six distinct companions, each shipped as a transparent and inspectable v2 package.*
 
-[**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Brand guide**](docs/brand/BRAND_GUIDE.md) · [**Contributing guide**](CONTRIBUTING.md)
+[**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Contributing guide**](CONTRIBUTING.md)
 
 </div>
 
@@ -99,9 +99,6 @@ All six pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published spr
 ```text
 codex-pets/
 ├── catalog.json
-├── docs/brand/
-│   ├── BRAND_GUIDE.md
-│   └── BRAND_PROMPT.md
 ├── pets/
 │   └── <pet-id>/
 │       ├── pet.json
