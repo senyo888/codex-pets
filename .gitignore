@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.playwright-cli/
+/work/
