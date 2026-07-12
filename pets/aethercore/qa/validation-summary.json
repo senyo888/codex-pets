@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "petId": "aethercore",
+  "validatedAt": "2026-07-12",
+  "spriteVersionNumber": 2,
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1536,
+  "height": 2288,
+  "columns": 8,
+  "rows": 11,
+  "sha256": "de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205",
+  "atlasValidation": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0,
+    "transparentRgbResiduePixels": 0
+  },
+  "chromaDespill": {
+    "ok": true,
+    "algorithm": "edge-local-chroma-spill-suppression"
+  },
+  "directionValidation": {
+    "blindValidationOk": true,
+    "cardinalGatesPassed": 4,
+    "semanticPasses": 8,
+    "semanticWarnings": 8,
+    "semanticFailures": 0,
+    "reviewNote": "Intermediate-axis warnings were accepted after labeled normal-size and ordered-loop review confirmed the intended quadrants without reversal."
+  },
+  "continuity": {
+    "ok": true,
+    "reviewRequired": true,
+    "reviewNote": "Metric warnings were visually reviewed; no snap, scale pop, clipping, identity drift, or broken attachment was present."
+  }
+}

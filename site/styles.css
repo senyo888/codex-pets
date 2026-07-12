@@ -192,6 +192,12 @@ h1 span {
   box-shadow: 0 12px 38px rgba(34, 211, 238, 0.18);
 }
 
+.button-gold {
+  color: #1b1002;
+  background: linear-gradient(135deg, #fef3c7, #fbbf24);
+  box-shadow: 0 12px 38px rgba(245, 158, 11, 0.16);
+}
+
 .button-secondary {
   border-color: var(--line);
   color: var(--ink);
@@ -337,6 +343,103 @@ h1 span {
   font-weight: 700;
 }
 
+.pet-feature {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(38px, 6vw, 76px);
+  align-items: center;
+  margin-top: -26px;
+  margin-bottom: 76px;
+  padding: clamp(24px, 4vw, 42px);
+  overflow: hidden;
+  border: 1px solid rgba(251, 191, 36, 0.18);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 18% 46%, rgba(245, 158, 11, 0.08), transparent 30rem),
+    linear-gradient(145deg, rgba(36, 26, 14, 0.9), rgba(15, 27, 40, 0.94));
+  box-shadow: var(--shadow), inset 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.pet-feature-visual {
+  position: relative;
+  display: grid;
+  min-height: 340px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(251, 191, 36, 0.16);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 50% 46%, rgba(251, 191, 36, 0.12), transparent 36%),
+    linear-gradient(145deg, rgba(26, 18, 8, 0.78), rgba(37, 30, 20, 0.72));
+}
+
+.pet-feature-visual img {
+  position: relative;
+  z-index: 2;
+  width: 240px;
+  height: auto;
+  filter: drop-shadow(0 18px 24px rgba(146, 91, 16, 0.24));
+}
+
+.feature-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature-heading .eyebrow {
+  margin-bottom: 7px;
+}
+
+.eyebrow-gold {
+  color: #fbbf24;
+}
+
+.pet-feature-copy h2 {
+  margin: 0;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+}
+
+.feature-tagline {
+  max-width: 620px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.status-gold {
+  border-color: rgba(251, 191, 36, 0.22);
+  color: #fde68a;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.status-dot-gold {
+  background: #fbbf24;
+  box-shadow: 0 0 12px #f59e0b;
+}
+
+.gear-halo {
+  position: absolute;
+  border: 1px dashed rgba(251, 191, 36, 0.2);
+  border-radius: 50%;
+}
+
+.gear-halo-large {
+  width: 230px;
+  height: 230px;
+}
+
+.gear-halo-small {
+  width: 168px;
+  height: 168px;
+  border-style: solid;
+  transform: rotate(24deg);
+}
+
 .trust {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -393,6 +496,35 @@ h1 span {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.aethercore-theme {
+  --cyan: #fbbf24;
+  --cyan-strong: #f59e0b;
+  --violet: #fb7185;
+  --panel: rgba(34, 25, 14, 0.82);
+  --panel-strong: rgba(35, 27, 17, 0.96);
+  --line: rgba(251, 191, 36, 0.18);
+  background:
+    radial-gradient(circle at 50% -20%, rgba(245, 158, 11, 0.13), transparent 44rem),
+    linear-gradient(145deg, #171109 0%, #1c160d 52%, #101722 100%);
+}
+
+.aethercore-theme .brand-mark {
+  border-color: rgba(251, 191, 36, 0.42);
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.aethercore-theme .installer-visual {
+  border-color: rgba(251, 191, 36, 0.16);
+  background:
+    radial-gradient(circle at 50% 46%, rgba(251, 191, 36, 0.14), transparent 36%),
+    linear-gradient(145deg, rgba(26, 18, 8, 0.78), rgba(37, 30, 20, 0.8));
+}
+
+.aethercore-theme .installer-visual img {
+  filter: drop-shadow(0 18px 24px rgba(146, 91, 16, 0.24));
 }
 
 .installer-page main {
@@ -483,6 +615,7 @@ h1 span {
 
 @media (max-width: 850px) {
   .hero,
+  .pet-feature,
   .installer-card {
     grid-template-columns: 1fr;
   }
@@ -493,6 +626,10 @@ h1 span {
 
   .pet-card {
     max-width: 520px;
+  }
+
+  .pet-feature {
+    margin-top: 0;
   }
 
   .trust {
@@ -539,6 +676,7 @@ h1 span {
   }
 
   .pet-card,
+  .pet-feature,
   .installer-card {
     padding: 18px;
     border-radius: 24px;
@@ -548,12 +686,22 @@ h1 span {
     min-height: 260px;
   }
 
+  .pet-feature-visual {
+    min-height: 290px;
+  }
+
   .pet-visual img,
+  .pet-feature-visual img,
   .installer-visual img {
     width: 210px;
   }
 
   .pet-details {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .feature-heading {
     align-items: flex-start;
     flex-direction: column;
   }
