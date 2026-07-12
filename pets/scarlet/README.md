@@ -6,7 +6,7 @@
 
 <img src="preview.gif" alt="Scarlet idle animation" width="240">
 
-*A poised agent warrior who patrols code paths and protects execution integrity without noise or theatrics.*
+*Calian's evolved form: a poised agent warrior who patrols code paths and protects execution integrity without noise or theatrics.*
 
 [**Install Scarlet**](https://senyo888.github.io/codex-pets/install/scarlet/)
 
@@ -14,7 +14,7 @@
 
 ## Personality
 
-Scarlet is poised, vigilant, and exacting. She traces weak points across a system, contains drift before it spreads, and closes gaps with controlled precision.
+Scarlet is Calian's evolved form: more mobile, more exacting, and built for wider defensive coverage. She traces weak points across a system, contains drift before it spreads, and closes gaps with controlled precision.
 
 Her strength is quiet command. She protects the runtime, keeps changes explainable, and never mistakes spectacle for progress.
 
@@ -36,7 +36,7 @@ The package contains the exact validated spritesheet and matching sanitized meta
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Scarlet&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fscarlet%2Fspritesheet.webp&description=A%20poised%20agent%20warrior%20who%20patrols%20code%20paths%2C%20counters%20drift%2C%20and%20protects%20execution%20integrity%20without%20noise%20or%20theatrics.&spriteVersionNumber=2
+codex://pets/install?name=Scarlet&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fscarlet%2Fspritesheet.webp&description=Scarlet%20is%20Calian%27s%20evolved%20form%3A%20a%20poised%20agent%20warrior%20who%20patrols%20code%20paths%2C%20counters%20drift%2C%20and%20protects%20execution%20integrity%20without%20noise%20or%20theatrics.&spriteVersionNumber=2
 ```
 
 Then select Scarlet in **Settings → Pets** and use `/pet` to wake or tuck her away.

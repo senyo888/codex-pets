@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="site/assets/brand/codex-pets-header.png" alt="Codex Pets orbital-paw brand header" width="92%">
+<img src="site/assets/brand/codex-pets-header.png" alt="Codex Pets orbital-paw brand header" width="86%">
 
 # Codex Pets
 
@@ -39,7 +39,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | [**AetherMite**](pets/aethermite/README.md) | A systems tinkerer for diagnostics, refinement, and deterministic micro-innovation. | Sprite v2 | Validated and ready |
 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
 | [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
-| [**Scarlet**](pets/scarlet/README.md) | A poised execution defender who counters drift and protects runtime integrity. | Sprite v2 | Validated and ready |
+| [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form, built to counter drift and protect runtime integrity. | Sprite v2 | Validated and ready |
 
 ## Install a pet
 

@@ -45,7 +45,7 @@ a {
 
 .site-header {
   display: flex;
-  min-height: 58px;
+  min-height: 52px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--line);
@@ -54,23 +54,23 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  font-size: 1.08rem;
+  gap: 8px;
+  font-size: 1rem;
   font-weight: 820;
   letter-spacing: -0.035em;
   text-decoration: none;
 }
 
 .brand img {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
 .site-nav {
   display: flex;
   align-items: stretch;
-  gap: clamp(18px, 2.5vw, 40px);
+  gap: clamp(16px, 2.2vw, 34px);
   align-self: stretch;
 }
 
@@ -95,15 +95,15 @@ a {
 .hero {
   position: relative;
   display: grid;
-  min-height: clamp(510px, 52vw, 650px);
+  min-height: clamp(470px, 48vw, 600px);
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
   grid-template-rows: 1fr auto;
-  gap: clamp(34px, 5vw, 76px);
+  gap: clamp(30px, 4.5vw, 66px);
   align-items: end;
   overflow: hidden;
-  margin-top: 22px;
-  margin-bottom: 36px;
-  padding: clamp(34px, 5vw, 70px);
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding: clamp(30px, 4.5vw, 60px);
   border: 1px solid rgba(100, 230, 245, 0.24);
   border-radius: 30px;
   background:
@@ -640,7 +640,7 @@ h1 {
 
 @media (max-width: 1160px) {
   .hero {
-    min-height: 590px;
+    min-height: 540px;
     grid-template-columns: minmax(0, 1fr);
     background-position: 58% center;
   }
@@ -673,8 +673,8 @@ h1 {
     min-height: auto;
     align-items: flex-start;
     flex-direction: column;
-    gap: 12px;
-    padding-block: 14px;
+    gap: 10px;
+    padding-block: 10px;
   }
 
   .site-nav {
@@ -692,10 +692,10 @@ h1 {
   .hero {
     grid-template-columns: 1fr;
     gap: 34px;
-    min-height: 590px;
-    margin-top: 16px;
-    margin-bottom: 30px;
-    padding: 30px 22px 22px;
+    min-height: 540px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+    padding: 26px 22px 20px;
     border-radius: 22px;
     background:
       linear-gradient(180deg, rgba(3, 10, 23, 0.72) 0%, rgba(3, 10, 23, 0.9) 62%, rgba(3, 10, 23, 0.98) 100%),
