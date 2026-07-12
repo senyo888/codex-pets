@@ -1,16 +1,14 @@
 <div align="center">
 
+<img src="site/assets/brand/codex-pets-header.png" alt="Codex Pets orbital-paw brand header" width="92%">
+
 # Codex Pets
-
-<img src="site/assets/brand/codex-pets-header.png" alt="Codex Pets orbital-paw brand header" width="100%">
-
-<img src="site/assets/brand/codex-pets-logo.png" alt="Codex Pets orbital-paw logo" width="96">
 
 **Small companions. Serious sprites.**
 
 An independent community catalogue of custom animated pets for the Codex desktop app, packaged with one-click install links and reviewable validation evidence.
 
-![Pets](https://img.shields.io/badge/pets-4-67e8f9?style=flat-square)
+![Pets](https://img.shields.io/badge/pets-6-67e8f9?style=flat-square)
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
 
@@ -18,10 +16,12 @@ An independent community catalogue of custom animated pets for the Codex desktop
 <img src="pets/aethercore/preview.gif" alt="AetherCore idle animation" width="150">
 <img src="pets/aethermite/preview.gif" alt="AetherMite idle animation" width="150">
 <img src="pets/aetherbite/preview.gif" alt="Aetherbite idle animation" width="150">
+<img src="pets/calian/preview.gif" alt="Calian idle animation" width="150">
+<img src="pets/scarlet/preview.gif" alt="Scarlet idle animation" width="150">
 
-### Bella · AetherCore · AetherMite · Aetherbite
+### Bella · AetherCore · AetherMite · Aetherbite · Calian · Scarlet
 
-*Crystal clarity, clockwork continuity, and two champions of Humidity Intelligence.*
+*Six distinct companions, each shipped as a transparent and inspectable v2 package.*
 
 [**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Brand guide**](docs/brand/BRAND_GUIDE.md) · [**Contributing guide**](CONTRIBUTING.md)
 
@@ -38,6 +38,8 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | [**AetherCore**](pets/aethercore/README.md) | A calm clockwork governance engine for continuity, coherence, and visible drift. | Sprite v2 | Validated and ready |
 | [**AetherMite**](pets/aethermite/README.md) | A systems tinkerer for diagnostics, refinement, and deterministic micro-innovation. | Sprite v2 | Validated and ready |
 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
+| [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
+| [**Scarlet**](pets/scarlet/README.md) | A poised execution defender who counters drift and protects runtime integrity. | Sprite v2 | Validated and ready |
 
 ## Install a pet
 
@@ -49,6 +51,8 @@ Each HTTPS install page opens the pet installation flow when Pets are enabled fo
 | AetherCore | [Open installer](https://senyo888.github.io/codex-pets/install/aethercore/) | [Inspect files](pets/aethercore) |
 | AetherMite | [Open installer](https://senyo888.github.io/codex-pets/install/aethermite/) | [Inspect files](pets/aethermite) |
 | Aetherbite | [Open installer](https://senyo888.github.io/codex-pets/install/aetherbite/) | [Inspect files](pets/aetherbite) |
+| Calian | [Open installer](https://senyo888.github.io/codex-pets/install/calian/) | [Inspect files](pets/calian) |
+| Scarlet | [Open installer](https://senyo888.github.io/codex-pets/install/scarlet/) | [Inspect files](pets/scarlet) |
 
 After installation, open **Settings → Pets**, choose your companion, and wake it with `/pet`.
 
@@ -57,7 +61,7 @@ After installation, open **Settings → Pets**, choose your companion, and wake 
 If the deep link is unavailable, place both package files in your local pet directory:
 
 ```bash
-PET_ID=aethermite # bella, aethercore, aethermite, or aetherbite
+PET_ID=calian # bella, aethercore, aethermite, aetherbite, calian, or scarlet
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets/$PET_ID"
 curl -fL "https://raw.githubusercontent.com/senyo888/codex-pets/main/pets/$PET_ID/pet.json" \
   -o "${CODEX_HOME:-$HOME/.codex}/pets/$PET_ID/pet.json"
@@ -79,7 +83,7 @@ Every published pet includes:
 - direction and continuity review;
 - public QA sheets and a sanitized validation summary.
 
-All four pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published spritesheets match their fully reviewed local packages byte-for-byte.
+All six pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published spritesheets match their fully reviewed local packages byte-for-byte.
 
 | Pet | SHA-256 | Validation |
 | --- | --- | --- |
@@ -87,6 +91,8 @@ All four pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published sp
 | AetherCore | `de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205` | [Summary](pets/aethercore/qa/validation-summary.json) |
 | AetherMite | `d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75` | [Summary](pets/aethermite/qa/validation-summary.json) |
 | Aetherbite | `92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37` | [Summary](pets/aetherbite/qa/validation-summary.json) |
+| Calian | `86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34` | [Summary](pets/calian/qa/validation-summary.json) |
+| Scarlet | `41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b` | [Summary](pets/scarlet/qa/validation-summary.json) |
 
 ## Repository layout
 

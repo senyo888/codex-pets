@@ -1,0 +1,7 @@
+{
+  "id": "scarlet",
+  "displayName": "Scarlet",
+  "description": "A poised agent warrior who patrols code paths, counters drift, and protects execution integrity without noise or theatrics.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

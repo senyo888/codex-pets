@@ -25,6 +25,13 @@ The logo is an RGBA PNG with a transparent background. The header intentionally
 contains no rasterized words; surrounding HTML or Markdown owns the accessible
 **Codex Pets** title.
 
+## Presentation density
+
+- Keep the website navigation bar compact: a `58 px` desktop minimum height with a `36 px` mark.
+- Use the wide header as atmosphere, not as a second title. The website hero supplies the real heading and supporting copy.
+- In the repository README, display the wide header at `92%` width and do not stack a second standalone logo beneath it.
+- Preserve the source asset ratio. Any future crop or replacement requires its own visual review across the website hero and GitHub README.
+
 ## Colour
 
 | Role | Value |
