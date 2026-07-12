@@ -3,111 +3,169 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Custom animated pets for the Codex desktop app.">
-    <meta name="theme-color" content="#07111f">
-    <title>Codex Pets · Small companions, serious sprites</title>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <meta name="description" content="A community catalogue of custom animated pets for the Codex desktop app.">
+    <meta name="theme-color" content="#06111f">
+    <title>Codex Pets · Choose your companion</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <div class="glow glow-one" aria-hidden="true"></div>
-    <div class="glow glow-two" aria-hidden="true"></div>
-
     <header class="site-header shell">
-      <a class="brand" href="./" aria-label="Codex Pets home">
-        <span class="brand-mark">✦</span>
-        <span>Codex Pets</span>
-      </a>
-      <a class="text-link" href="https://github.com/senyo888/codex-pets">View on GitHub <span aria-hidden="true">↗</span></a>
+      <a class="brand" href="./" aria-label="Codex Pets home">Codex Pets</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#catalogue" aria-current="page">Catalogue</a>
+        <a href="#standards">Standards</a>
+        <a href="https://github.com/senyo888/codex-pets/blob/main/CONTRIBUTING.md">Contribute</a>
+        <a href="https://github.com/senyo888/codex-pets">GitHub</a>
+      </nav>
     </header>
 
     <main>
-      <section class="hero shell">
+      <section class="hero shell" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow">A tiny public catalogue</p>
-          <h1>Small companions.<br><span>Serious sprites.</span></h1>
-          <p class="lede">Animated Codex pets with transparent packages, one-click installers, and validation evidence you can actually inspect.</p>
-          <div class="actions">
-            <a class="button button-primary" href="./install/bella/">Install Bella <span aria-hidden="true">✦</span></a>
-            <a class="button button-secondary" href="./install/aethercore/">Install AetherCore <span aria-hidden="true">⚙</span></a>
-          </div>
+          <p class="eyebrow">Community pet catalogue</p>
+          <h1 id="page-title">Choose your <span>companion.</span></h1>
         </div>
-
-        <article class="pet-card" aria-labelledby="bella-title">
-          <div class="pet-visual">
-            <span class="orbit orbit-one" aria-hidden="true"></span>
-            <span class="orbit orbit-two" aria-hidden="true"></span>
-            <img src="./assets/bella-preview.gif" alt="Bella's calm idle animation" width="240" height="260">
-          </div>
-          <div class="pet-details">
-            <div>
-              <p class="pet-number">Pet 001</p>
-              <h2 id="bella-title">Bella</h2>
-            </div>
-            <span class="status"><span class="status-dot"></span> Validated v2</span>
-          </div>
-          <p class="pet-tagline">The 1 True Source — a crystalline guardian of clarity, truth, and deterministic coherence.</p>
-          <ul class="pet-traits" aria-label="Bella's traits">
-            <li>Calm</li>
-            <li>Precise</li>
-            <li>Gently sceptical</li>
-          </ul>
-        </article>
+        <p class="lede">Animated desktop pets with transparent packages, one-click installers, and validation evidence you can inspect.</p>
+        <dl class="hero-stats" aria-label="Collection status">
+          <div><dt>Published pets</dt><dd>4</dd></div>
+          <div><dt>Rows per pet</dt><dd>11</dd></div>
+          <div><dt>Directions per pet</dt><dd>16</dd></div>
+          <div><dt>Structural errors</dt><dd>0</dd></div>
+        </dl>
       </section>
 
-      <section class="pet-feature aethercore-feature shell" aria-labelledby="aethercore-title">
-        <div class="pet-feature-visual">
-          <span class="gear-halo gear-halo-large" aria-hidden="true"></span>
-          <span class="gear-halo gear-halo-small" aria-hidden="true"></span>
-          <img src="./assets/aethercore-preview.gif" alt="AetherCore's calm idle animation" width="240" height="260">
-        </div>
-
-        <div class="pet-feature-copy">
-          <div class="feature-heading">
-            <div>
-              <p class="eyebrow eyebrow-gold">Pet 002 · governance engine</p>
-              <h2 id="aethercore-title">AetherCore</h2>
+      <section class="catalogue shell" id="catalogue" aria-label="Pet catalogue">
+        <div class="pet-grid">
+          <article class="pet-card pet-bella" aria-labelledby="bella-title">
+            <div class="pet-visual">
+              <img src="./assets/bella-preview.gif" alt="Bella's calm idle animation" width="192" height="208">
             </div>
-            <span class="status status-gold"><span class="status-dot status-dot-gold"></span> Validated v2</span>
-          </div>
+            <div class="pet-content">
+              <div class="pet-heading">
+                <div>
+                  <p class="pet-number">Pet 001</p>
+                  <h3 id="bella-title">Bella</h3>
+                </div>
+                <span class="status"><span class="status-dot"></span>Validated v2</span>
+              </div>
+              <p class="pet-role">Crystalline guardian</p>
+              <p class="pet-description">The 1 True Source of clarity, truth, and deterministic coherence.</p>
+              <ul class="pet-traits" aria-label="Bella's traits">
+                <li>Calm</li>
+                <li>Precise</li>
+                <li>Gently sceptical</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button button-install" href="./install/bella/">Install Bella</a>
+                <a class="button button-package" href="https://github.com/senyo888/codex-pets/tree/main/pets/bella">Inspect package</a>
+              </div>
+            </div>
+          </article>
 
-          <p class="feature-tagline">The Continuity Engine — a calm clockwork guardian built to keep decisions connected, drift visible, and governance coherent.</p>
+          <article class="pet-card pet-aethercore" aria-labelledby="aethercore-title">
+            <div class="pet-visual">
+              <img src="./assets/aethercore-preview.gif" alt="AetherCore's calm idle animation" width="192" height="208">
+            </div>
+            <div class="pet-content">
+              <div class="pet-heading">
+                <div>
+                  <p class="pet-number">Pet 002</p>
+                  <h3 id="aethercore-title">AetherCore</h3>
+                </div>
+                <span class="status"><span class="status-dot"></span>Validated v2</span>
+              </div>
+              <p class="pet-role">Governance engine</p>
+              <p class="pet-description">The Continuity Engine that keeps decisions connected, visible, and coherent.</p>
+              <ul class="pet-traits" aria-label="AetherCore's traits">
+                <li>Measured</li>
+                <li>Dependable</li>
+                <li>Quietly vigilant</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button button-install" href="./install/aethercore/">Install AetherCore</a>
+                <a class="button button-package" href="https://github.com/senyo888/codex-pets/tree/main/pets/aethercore">Inspect package</a>
+              </div>
+            </div>
+          </article>
 
-          <ul class="pet-traits" aria-label="AetherCore's traits">
-            <li>Measured</li>
-            <li>Dependable</li>
-            <li>Quietly vigilant</li>
-          </ul>
+          <article class="pet-card pet-aethermite" aria-labelledby="aethermite-title">
+            <div class="pet-visual">
+              <img src="./assets/aethermite-preview.gif" alt="AetherMite's calm idle animation" width="192" height="208">
+            </div>
+            <div class="pet-content">
+              <div class="pet-heading">
+                <div>
+                  <p class="pet-number">Pet 003</p>
+                  <h3 id="aethermite-title">AetherMite</h3>
+                </div>
+                <span class="status"><span class="status-dot"></span>Validated v2</span>
+              </div>
+              <p class="pet-role">Systems tinkerer</p>
+              <p class="pet-description">A Humidity Intelligence champion for diagnostics, refinement, and deterministic micro-innovation.</p>
+              <ul class="pet-traits" aria-label="AetherMite's traits">
+                <li>Curious</li>
+                <li>Inventive</li>
+                <li>Keen-eyed</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button button-install" href="./install/aethermite/">Install AetherMite</a>
+                <a class="button button-package" href="https://github.com/senyo888/codex-pets/tree/main/pets/aethermite">Inspect package</a>
+              </div>
+            </div>
+          </article>
 
-          <div class="actions">
-            <a class="button button-gold" href="./install/aethercore/">Install AetherCore <span aria-hidden="true">⚙</span></a>
-            <a class="button button-secondary" href="https://github.com/senyo888/codex-pets/tree/main/pets/aethercore">Inspect package</a>
-          </div>
+          <article class="pet-card pet-aetherbite" aria-labelledby="aetherbite-title">
+            <div class="pet-visual">
+              <img src="./assets/aetherbite-preview.gif" alt="Aetherbite's calm idle animation" width="192" height="208">
+            </div>
+            <div class="pet-content">
+              <div class="pet-heading">
+                <div>
+                  <p class="pet-number">Pet 004</p>
+                  <h3 id="aetherbite-title">Aetherbite</h3>
+                </div>
+                <span class="status"><span class="status-dot"></span>Validated v2</span>
+              </div>
+              <p class="pet-role">Bio-digital champion</p>
+              <p class="pet-description">Humidity Intelligence's refined systems tinkerer, with crystalline wings and expressive articulated motion.</p>
+              <ul class="pet-traits" aria-label="Aetherbite's traits">
+                <li>Energetic</li>
+                <li>Resolute</li>
+                <li>Inventive</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button button-install" href="./install/aetherbite/">Install Aetherbite</a>
+                <a class="button button-package" href="https://github.com/senyo888/codex-pets/tree/main/pets/aetherbite">Inspect package</a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="trust shell" aria-label="Collection quality">
-        <div>
-          <strong>2</strong>
-          <span>published pets</span>
+      <section class="standards shell" id="standards" aria-labelledby="standards-title">
+        <div class="standards-intro">
+          <p class="eyebrow">Inspectable quality</p>
+          <h2 id="standards-title">Delightful in motion. Boringly reliable as a package.</h2>
         </div>
-        <div>
-          <strong>22</strong>
-          <span>animation rows</span>
-        </div>
-        <div>
-          <strong>32</strong>
-          <span>look directions</span>
-        </div>
-        <div>
-          <strong>0</strong>
-          <span>structural errors</span>
+        <div class="standards-grid">
+          <article>
+            <h3>Transparent packages</h3>
+            <p>Every pet ships with clean source files, a preview, metadata, and a recorded checksum.</p>
+          </article>
+          <article>
+            <h3>Deterministic validation</h3>
+            <p>Atlas geometry, alpha integrity, animation rows, directions, and continuity are checked before publication.</p>
+          </article>
+          <article>
+            <h3>Open evidence</h3>
+            <p>Contact sheets, look-direction sheets, and sanitized validation summaries remain available for review.</p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer shell">
-      <p>Made with care, crystals, clockwork, and an unreasonable respect for deterministic packaging.</p>
+      <p>Independent community project. Not affiliated with or endorsed by OpenAI.</p>
       <p>Artwork and documentation licensed under <a href="https://github.com/senyo888/codex-pets/blob/main/LICENSE">CC BY 4.0</a>.</p>
     </footer>
   </body>
