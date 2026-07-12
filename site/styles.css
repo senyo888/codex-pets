@@ -285,6 +285,11 @@ h1 {
   --accent-rgb: 212, 140, 255;
 }
 
+.pet-aetherwing {
+  --accent: #65e6f4;
+  --accent-rgb: 101, 230, 244;
+}
+
 .pet-visual {
   display: grid;
   min-height: 100%;
@@ -563,6 +568,11 @@ h1 {
 .scarlet-theme .installer-card {
   --accent: #d48cff;
   --accent-rgb: 212, 140, 255;
+}
+
+.aetherwing-theme .installer-card {
+  --accent: #65e6f4;
+  --accent-rgb: 101, 230, 244;
 }
 
 .installer-visual {
