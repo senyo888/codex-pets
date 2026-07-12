@@ -20,6 +20,26 @@
       "previewPath": "pets/aethercore/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aethercore/",
       "sha256": "de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205"
+    },
+    {
+      "id": "aethermite",
+      "displayName": "AetherMite",
+      "description": "A bio-digital systems champion for Humidity Intelligence, focused on diagnostics, refinement, and deterministic micro-innovation.",
+      "spriteVersionNumber": 2,
+      "spritesheetPath": "pets/aethermite/spritesheet.webp",
+      "previewPath": "pets/aethermite/preview.gif",
+      "installPage": "https://senyo888.github.io/codex-pets/install/aethermite/",
+      "sha256": "d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75"
+    },
+    {
+      "id": "aetherbite",
+      "displayName": "Aetherbite",
+      "description": "A refined bio-digital champion for Humidity Intelligence, with crystalline wings, an HI chest crest, and expressive articulated motion.",
+      "spriteVersionNumber": 2,
+      "spritesheetPath": "pets/aetherbite/spritesheet.webp",
+      "previewPath": "pets/aetherbite/preview.gif",
+      "installPage": "https://senyo888.github.io/codex-pets/install/aetherbite/",
+      "sha256": "92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37"
     }
   ]
 }
