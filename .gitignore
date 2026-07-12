@@ -4,3 +4,7 @@ Thumbs.db
 *.tmp
 .playwright-cli/
 /work/
+
+# Local brand-generation guidance; public assets remain under site/assets/brand/.
+/docs/brand/BRAND_GUIDE.md
+/docs/brand/BRAND_PROMPT.md
