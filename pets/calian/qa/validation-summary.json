@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "petId": "calian",
+  "validatedAt": "2026-07-13",
+  "spriteVersionNumber": 2,
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1536,
+  "height": 2288,
+  "columns": 8,
+  "rows": 11,
+  "sha256": "86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34",
+  "atlasValidation": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0,
+    "transparentRgbResiduePixels": 0
+  },
+  "chromaDespill": {
+    "ok": true,
+    "algorithm": "edge-local-chroma-spill-suppression"
+  },
+  "directionValidation": {
+    "blindValidationOk": true,
+    "cardinalGatesPassed": 4,
+    "semanticPasses": 10,
+    "semanticWarnings": 6,
+    "semanticFailures": 0,
+    "reviewNote": "Intermediate horizontal disagreements were accepted only after labeled normal-size review confirmed the intended quadrants and a continuous ordered loop."
+  },
+  "continuity": {
+    "ok": true,
+    "reviewRequired": true,
+    "reviewNote": "Boundary metric outliers were visually reviewed as natural profile-to-frontal changes with no visible snap, scale pop, identity shift, or broken attachment."
+  }
+}

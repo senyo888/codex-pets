@@ -40,6 +40,26 @@
       "previewPath": "pets/aetherbite/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aetherbite/",
       "sha256": "92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37"
+    },
+    {
+      "id": "calian",
+      "displayName": "Calian",
+      "description": "A calm, disciplined agent warrior who defends code, resolves threats, and keeps complex systems under deliberate control.",
+      "spriteVersionNumber": 2,
+      "spritesheetPath": "pets/calian/spritesheet.webp",
+      "previewPath": "pets/calian/preview.gif",
+      "installPage": "https://senyo888.github.io/codex-pets/install/calian/",
+      "sha256": "86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34"
+    },
+    {
+      "id": "scarlet",
+      "displayName": "Scarlet",
+      "description": "A poised agent warrior who patrols code paths, counters drift, and protects execution integrity without noise or theatrics.",
+      "spriteVersionNumber": 2,
+      "spritesheetPath": "pets/scarlet/spritesheet.webp",
+      "previewPath": "pets/scarlet/preview.gif",
+      "installPage": "https://senyo888.github.io/codex-pets/install/scarlet/",
+      "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b"
     }
   ]
 }
