@@ -239,7 +239,8 @@ h1 {
   gap: 18px;
 }
 
-.pet-card {
+.pet-card,
+.contribution-card {
   --accent: #64e6f5;
   --accent-rgb: 100, 230, 245;
   display: grid;
@@ -255,7 +256,8 @@ h1 {
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
-.pet-card:hover {
+.pet-card:hover,
+.contribution-card:hover {
   border-color: rgba(var(--accent-rgb), 0.58);
   transform: translateY(-2px);
 }
@@ -290,7 +292,21 @@ h1 {
   --accent-rgb: 101, 230, 244;
 }
 
-.pet-visual {
+.contribution-card {
+  --accent: #a78bfa;
+  --accent-rgb: 167, 139, 250;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contribution-card:focus-visible {
+  border-color: rgba(var(--accent-rgb), 0.78);
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.pet-visual,
+.contribution-visual {
   display: grid;
   min-height: 100%;
   place-items: center;
@@ -299,11 +315,38 @@ h1 {
   background: radial-gradient(circle at center, rgba(var(--accent-rgb), 0.16), transparent 62%);
 }
 
-.pet-visual img {
+.pet-visual img,
+.contribution-visual img {
   width: min(196px, 100%);
   height: auto;
   image-rendering: auto;
   filter: drop-shadow(0 18px 26px rgba(var(--accent-rgb), 0.2));
+}
+
+.contribution-visual img {
+  width: min(154px, 70%);
+}
+
+.contribution-kicker {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 820;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.invitation-badge {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  padding: 7px 10px;
+  border: 1px solid rgba(var(--accent-rgb), 0.28);
+  border-radius: 999px;
+  color: #e2d9ff;
+  background: rgba(var(--accent-rgb), 0.09);
+  font-size: 0.68rem;
+  font-weight: 760;
 }
 
 .pet-content {
@@ -390,6 +433,10 @@ h1 {
   gap: 10px;
   margin-top: auto;
   padding-top: 16px;
+}
+
+.card-actions-single {
+  grid-template-columns: 1fr;
 }
 
 .button {
@@ -655,11 +702,13 @@ h1 {
     background-position: 58% center;
   }
 
-  .pet-card {
+  .pet-card,
+  .contribution-card {
     grid-template-columns: 1fr;
   }
 
-  .pet-visual {
+  .pet-visual,
+  .contribution-visual {
     min-height: 290px;
     border-right: 0;
     border-bottom: 1px solid rgba(var(--accent-rgb), 0.16);
@@ -667,6 +716,10 @@ h1 {
 
   .pet-visual img {
     width: 230px;
+  }
+
+  .contribution-visual {
+    min-height: 230px;
   }
 
   .standards {
@@ -752,6 +805,10 @@ h1 {
 
   .pet-visual {
     min-height: 260px;
+  }
+
+  .contribution-visual {
+    min-height: 190px;
   }
 
   .pet-content {
