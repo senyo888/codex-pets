@@ -1,0 +1,101 @@
+name: Add Your Pet
+description: Share a pet idea, artwork, atlas, or package and get a clear next step.
+title: "[Pet submission] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping the collection grow. You do not need a finished package to start.
+
+        GitHub issues are public. Do not include tokens, private download links, local file paths, personal information, or artwork you cannot share publicly.
+
+  - type: input
+    id: pet-name
+    attributes:
+      label: Pet name
+      description: What should people see in the catalogue?
+      placeholder: "Example: Orbit"
+    validations:
+      required: true
+
+  - type: input
+    id: pet-id
+    attributes:
+      label: Proposed pet ID
+      description: Optional. Use lowercase letters, numbers, and hyphens; a maintainer will confirm availability.
+      placeholder: "Example: orbit"
+
+  - type: textarea
+    id: personality
+    attributes:
+      label: Description and personality
+      description: Tell us what the pet looks like, what makes it distinctive, and how it should feel in motion.
+      placeholder: A short description plus a few defining traits.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: readiness
+    attributes:
+      label: What do you have today?
+      options:
+        - An idea or early concept
+        - Shareable artwork or animation
+        - A v2 atlas in progress
+        - A complete package ready for review
+    validations:
+      required: true
+
+  - type: textarea
+    id: materials
+    attributes:
+      label: Artwork or package
+      description: Drag public files here, add a public link, or explain what still needs to be created.
+      placeholder: Attach files or paste public links. Do not use private or expiring links.
+    validations:
+      required: true
+
+  - type: input
+    id: attribution
+    attributes:
+      label: Attribution
+      description: Name or GitHub handle that should receive credit, plus the source if it is not entirely your own work.
+      placeholder: "Example: @username — original artwork"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: help
+    attributes:
+      label: What help do you need?
+      options:
+        - Help planning the package
+        - Help understanding the v2 atlas requirements
+        - Review of an atlas or partial package
+        - Final review before a pull request
+    validations:
+      required: true
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation already completed
+      description: Optional. List dimensions, alpha checks, animation review, checksums, or other evidence you already have.
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and publication
+      options:
+        - label: For every submitted asset, I am the creator or have authority to contribute it under CC BY 4.0.
+          required: true
+        - label: I agree that accepted artwork and documentation may be published under CC BY 4.0 with the attribution provided above.
+          required: true
+
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Review acknowledgement
+      options:
+        - label: I understand that this public submission starts a review and does not guarantee approval or publication.
+          required: true

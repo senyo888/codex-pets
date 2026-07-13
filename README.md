@@ -24,7 +24,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 
 *Seven distinct companions, each shipped as a transparent and inspectable v2 package.*
 
-[**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Contributing guide**](CONTRIBUTING.md)
+[**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Add your pet**](CONTRIBUTING.md#add-your-pet)
 
 </div>
 
@@ -126,7 +126,7 @@ See the [Pets documentation](https://learn.chatgpt.com/docs/pets?surface=app) fo
 
 ## Contributing
 
-New pets are welcome once they meet the same packaging and QA bar. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+New pets are welcome. [Start a guided submission](https://github.com/senyo888/codex-pets/issues/new?template=add-your-pet.yml) with an idea or partial package, or follow the [Add Your Pet guide](CONTRIBUTING.md#add-your-pet) when a complete package is ready for a pull request.
 
 ## License
 
