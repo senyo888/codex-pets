@@ -60,6 +60,16 @@
       "previewPath": "pets/scarlet/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/scarlet/",
       "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b"
+    },
+    {
+      "id": "aetherwing",
+      "displayName": "Aetherwing",
+      "description": "A calm runtime sentinel for Humidity Intelligence, protecting deterministic control, architectural discipline, and truth-backed dashboard behaviour.",
+      "spriteVersionNumber": 2,
+      "spritesheetPath": "pets/aetherwing/spritesheet.webp",
+      "previewPath": "pets/aetherwing/preview.gif",
+      "installPage": "https://senyo888.github.io/codex-pets/install/aetherwing/",
+      "sha256": "2d67008ce9690ada4066e72e67d2cdee4cd4a3c4ad18c2b7be698b51d0498383"
     }
   ]
 }
