@@ -30,6 +30,22 @@ The metadata must use the same id as the directory:
 }
 ```
 
+## Preview rendering
+
+Build the six-frame idle GIF directly from the validated v2 atlas:
+
+```bash
+python3 scripts/render_idle_preview.py \
+  --spritesheet pets/<pet-id>/spritesheet.webp \
+  --output pets/<pet-id>/preview.gif
+```
+
+The command requires Python 3 and Pillow. The renderer preserves the standard idle
+timing, creates a `384 × 416` 2x presentation asset for clean browser downsampling, and
+uses a deterministic alpha cutoff before GIF encoding. This prevents GIF's binary
+transparency from turning faint edge pixels into a grainy fringe. Copy the resulting
+preview to `site/assets/` when the pet is shown in the public catalogue.
+
 ## Acceptance bar
 
 - The atlas is transparent WebP or PNG and follows the declared Codex sprite version.
