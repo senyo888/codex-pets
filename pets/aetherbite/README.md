@@ -2,11 +2,11 @@
 
 # Aetherbite
 
-**The Bio-Digital Champion**
+**The Bio-Digital CGI Tinkerer**
 
-<img src="preview.gif" alt="Aetherbite idle animation" width="240">
+<img src="preview.gif" alt="Aetherbite CGI idle animation" width="240">
 
-*A refined Humidity Intelligence systems tinkerer with crystalline wings, an HI chest crest, and expressive articulated motion.*
+*Humidity Intelligence's cinematic CGI systems tinkerer, with crystalline wings, layered articulated armour, and depth-rich expressive motion.*
 
 [**Install Aetherbite**](https://senyo888.github.io/codex-pets/install/aetherbite/)
 
@@ -14,9 +14,20 @@
 
 ## Personality
 
-Aetherbite is energetic, resolute, and inventive. It brings a larger presence to systems work while keeping the same practical instinct: observe carefully, explain the change, and improve the smallest useful thing first.
+Aetherbite is energetic, resolute, and inventive. It brings a compact but dimensional presence to systems work while keeping the same practical instinct: observe carefully, explain the change, and improve the smallest useful thing first.
 
-Its bronze-and-silver frame, crystalline blue wings, and luminous chest crest make it the collection's boldest Humidity Intelligence champion.
+Its silver-and-copper frame, crystalline cyan wings, dark luminous visor, and Humidity Intelligence chest crest preserve the established identity while adding clearer depth and material separation.
+
+## Design and motion
+
+Aetherbite now uses a modern CGI 3D construction without changing its recognizable silhouette or state semantics.
+
+- overlapping armour plates, recessed joints, bevels, and ambient occlusion create readable front-to-back body depth;
+- polished silver, aged copper, dark visor glass, and restrained cyan emission separate the materials cleanly;
+- translucent faceted wings change overlap through coherent yaw and pitch parallax;
+- the eyes lead each look direction while the rigid helmet, upper torso, and wings follow physically;
+- directional travel retains an alternating articulated gait, while running remains focused systems work rather than literal locomotion;
+- waiting, review, failure, wave, and jump states remain distinct and explainable at pet size.
 
 ## Package
 
@@ -27,16 +38,16 @@ Its bronze-and-silver frame, crystalline blue wings, and luminous chest crest ma
 | Atlas | `1536 × 2288` WebP |
 | Cell size | `192 × 208` |
 | Animation rows | 9 standard + 2 look-direction rows |
-| SHA-256 | `92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37` |
+| SHA-256 | `18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346` |
 
-The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Aetherbite&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Faetherbite%2Fspritesheet.webp&description=A%20refined%20bio-digital%20champion%20for%20Humidity%20Intelligence%2C%20with%20crystalline%20wings%2C%20an%20HI%20chest%20crest%2C%20and%20expressive%20articulated%20motion.&spriteVersionNumber=2
+codex://pets/install?name=Aetherbite&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Faetherbite%2Fspritesheet.webp&description=Aetherbite%20is%20Humidity%20Intelligence%27s%20bio-digital%20systems%20tinkerer%2C%20modernized%20in%20cinematic%20CGI%203D%20with%20crystalline%20wings%2C%20layered%20articulated%20armor%2C%20and%20expressive%20depth-rich%20motion.&spriteVersionNumber=2
 ```
 
 Then select Aetherbite in **Settings → Pets** and use `/pet` to wake or tuck it away.
@@ -48,9 +59,10 @@ Aetherbite passed the v2 atlas validator with:
 - correct `8 × 11` geometry and alpha transparency;
 - no structural errors or validator warnings;
 - no transparent-pixel RGB residue;
-- all four cardinal look directions confirmed;
-- no failed semantic direction verdicts;
-- reviewed minor intermediate-direction and continuity warnings with no visible reversal, clipping, identity drift, or broken attachment.
+- no chroma fringe after the authoritative cleanup pass;
+- all four cardinal look directions confirmed by independent blind review;
+- no failed semantic direction verdicts across the complete 16-direction loop;
+- reviewed intermediate-axis and continuity warnings with no visible reversal, snap, clipping, identity drift, body hole, or broken attachment.
 
 [Read the validation summary](qa/validation-summary.json)
 
