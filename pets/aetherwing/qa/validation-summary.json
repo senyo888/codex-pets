@@ -1,7 +1,9 @@
 {
   "ok": true,
   "petId": "aetherwing",
-  "validatedAt": "2026-07-13",
+  "displayName": "AetherWing",
+  "catalogueNumber": "Pet 002",
+  "validatedAt": "2026-07-14",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +11,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "2d67008ce9690ada4066e72e67d2cdee4cd4a3c4ad18c2b7be698b51d0498383",
+  "sha256": "c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -21,16 +23,43 @@
     "algorithm": "edge-local-chroma-spill-suppression"
   },
   "directionValidation": {
-    "blindValidationOk": true,
-    "cardinalGatesPassed": 4,
-    "semanticPasses": 13,
-    "semanticWarnings": 3,
+    "ok": true,
+    "directionsPassed": 16,
+    "directionsExpected": 16,
     "semanticFailures": 0,
-    "reviewNote": "Three subtle intermediate-axis cues were accepted after labeled normal-size review confirmed their intended quadrants and a coherent ordered loop."
+    "blindClassifications": 28,
+    "blindCorrect": 28,
+    "blindUnanimous": true,
+    "reviewNote": "All 16 gaze positions passed; all 28 blind A/B direction classifications were unanimously correct."
+  },
+  "visualDesign": {
+    "style": "premium sharp 3D CGI hard-surface character",
+    "palettePreserved": true,
+    "finish": "polished metallic and ceramic-metal shell",
+    "eye": "convex smoked-glass visor with cyan glass iris",
+    "badge": "convex glass chest badge with the official Humidity Intelligence glyph",
+    "wings": "four modern articulated flight wings",
+    "legs": "articulated mechanical legs with an aerodynamic airborne posture"
+  },
+  "officialLogo": {
+    "url": "https://raw.githubusercontent.com/senyo888/humidity-intelligence/main/icon.png",
+    "sha256": "edd73abfbd1f22d924b535e113ecfe0471de6f28e08ef88988ea87190f516b61"
+  },
+  "movementValidation": {
+    "ok": true,
+    "mode": "flight-first",
+    "visibleWingFlapCycle": true,
+    "flapPositions": [
+      "raised",
+      "mid",
+      "lowered",
+      "recovery"
+    ],
+    "groundWalkingOrRunning": false
   },
   "continuity": {
     "ok": true,
-    "reviewRequired": true,
-    "reviewNote": "Metric warnings were visually reviewed; negative spaces and transition outliers remain natural with no visible snap, reversal, scale pop, registration jump, identity change, or broken attachment."
+    "reviewCompleted": true,
+    "reviewNote": "Final visual QA confirmed coherent identity, scale, glass, wing, leg, and chest-badge details across the animation set."
   }
 }

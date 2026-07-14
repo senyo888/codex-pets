@@ -256,6 +256,10 @@ h1 {
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
+.pet-card {
+  position: relative;
+}
+
 .pet-card:hover,
 .contribution-card:hover {
   border-color: rgba(var(--accent-rgb), 0.58);
@@ -371,6 +375,28 @@ h1 {
   letter-spacing: -0.055em;
 }
 
+.pet-readme-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pet-readme-link::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: 22px;
+  content: "";
+}
+
+.pet-readme-link:focus-visible {
+  outline: none;
+}
+
+.pet-readme-link:focus-visible::after {
+  outline: 3px solid var(--accent);
+  outline-offset: -4px;
+}
+
 .pet-number,
 .pet-role {
   color: var(--accent);
@@ -429,6 +455,8 @@ h1 {
 }
 
 .card-actions {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
   gap: 10px;
