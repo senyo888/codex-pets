@@ -47,7 +47,7 @@ The package contains the exact validated spritesheet and its matching `pet.json`
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Aetherbite&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Faetherbite%2Fspritesheet.webp&description=Aetherbite%20is%20Humidity%20Intelligence%27s%20bio-digital%20systems%20tinkerer%2C%20modernized%20in%20cinematic%20CGI%203D%20with%20crystalline%20wings%2C%20layered%20articulated%20armor%2C%20and%20expressive%20depth-rich%20motion.&spriteVersionNumber=2
+codex://pets/install?name=Aetherbite&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Faetherbite%2Fspritesheet.webp&description=Aetherbite%20is%20Humidity%20Intelligence%27s%20bio-digital%20systems%20tinkerer%2C%20modernized%20in%20cinematic%20CGI%203D%20with%20crystalline%20wings%2C%20layered%20articulated%20armour%2C%20and%20expressive%20depth-rich%20motion.&spriteVersionNumber=2
 ```
 
 Then select Aetherbite in **Settings → Pets** and use `/pet` to wake or tuck it away.
