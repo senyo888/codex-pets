@@ -23,6 +23,7 @@
 
 - [ ] One pet is included in this pull request
 - [ ] `pets/<pet-id>/pet.json` matches the lowercase directory ID
+- [ ] The pet README uses the canonical Package property list and order
 - [ ] The v2 atlas is `1536 × 2288`, transparent, and uses the `8 × 11` layout
 - [ ] Preview and QA evidence were produced from the submitted atlas
 - [ ] `README.md`, `catalog.json`, `site/index.html`, `site/assets/`, and `site/install/` agree

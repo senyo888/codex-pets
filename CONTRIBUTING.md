@@ -61,6 +61,7 @@ the gap is clear before you build the pull request.
    python3 -m json.tool "pets/${PET_ID}/pet.json" >/dev/null
    python3 -m json.tool "pets/${PET_ID}/qa/validation-summary.json" >/dev/null
    python3 -m json.tool catalog.json >/dev/null
+   python3 scripts/validate_catalog.py
    shasum -a 256 "pets/${PET_ID}/spritesheet.webp"
    git diff --check
    ```
@@ -104,6 +105,25 @@ The metadata must use the same id as the directory:
 }
 ```
 
+### Canonical README package properties
+
+Every `pets/<pet-id>/README.md` must use this exact property list and order in its
+`## Package` table. Keep identity in `pet.json` and catalogue numbering in the root
+catalogue; the package table is reserved for the stable technical contract.
+
+| Property | Required value |
+| --- | --- |
+| Pet id | Lowercase package directory ID |
+| Sprite contract | Declared sprite version, currently `v2` |
+| Atlas | `` `1536 × 2288` WebP `` |
+| Cell size | `` `192 × 208` `` |
+| Animation rows | `9 standard + 2 look-direction rows` |
+| SHA-256 | Exact hash of the published `spritesheet.webp` |
+
+Run `python3 scripts/validate_catalog.py` to enforce the property names, order, and
+values across every pet README, together with catalogue identity, hashes, previews,
+validation summaries, and local site references.
+
 ## Preview rendering
 
 Build the six-frame idle GIF directly from the validated v2 atlas:
@@ -137,6 +157,7 @@ Do not submit an unreviewed generated atlas, a flattened image without transpare
 
 - [ ] Pet package added under `pets/<pet-id>/`
 - [ ] `pet.json` and atlas version agree
+- [ ] Pet README uses the canonical Package property list and order
 - [ ] Atlas dimensions and alpha channel validated
 - [ ] Standard animations visually reviewed
 - [ ] V2 look directions and continuity reviewed
