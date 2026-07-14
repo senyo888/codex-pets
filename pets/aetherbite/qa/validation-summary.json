@@ -1,7 +1,8 @@
 {
   "ok": true,
   "petId": "aetherbite",
-  "validatedAt": "2026-07-12",
+  "displayName": "Aetherbite",
+  "validatedAt": "2026-07-14",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +10,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37",
+  "sha256": "18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -23,14 +24,29 @@
   "directionValidation": {
     "blindValidationOk": true,
     "cardinalGatesPassed": 4,
-    "semanticPasses": 13,
-    "semanticWarnings": 3,
+    "semanticPasses": 12,
+    "semanticWarnings": 4,
     "semanticFailures": 0,
-    "reviewNote": "Minor intermediate-axis ambiguity was accepted after all four hard cardinal gates passed and labeled loop review confirmed the intended quadrants without reversal."
+    "reviewNote": "Intermediate-axis warnings were accepted after all four hard cardinal gates passed and labeled normal-size loop review confirmed the intended quadrants without reversal."
+  },
+  "visualDesign": {
+    "style": "cinematic modern CGI 3D bio-digital tinkerer",
+    "identityPreserved": true,
+    "face": "dark rigid visor with luminous cyan eyes and dimensional helmet articulation",
+    "body": "layered silver and copper armour with bevels, recessed joints, occlusion, and material roughness variation",
+    "wings": "translucent faceted cyan crystal wings with coherent front-to-back parallax",
+    "lighting": "restrained cyan emission with consistent material response and readable depth separation"
+  },
+  "movementValidation": {
+    "ok": true,
+    "stateSemanticsPreserved": true,
+    "directionalTravel": "alternating articulated rightward gait with deterministic mirrored leftward cadence",
+    "activeWork": "focused visor, head, hand, and body articulation without literal travel gait",
+    "lookMechanics": "eyes lead; rigid helmet and visor follow; torso and wings add restrained parallax"
   },
   "continuity": {
     "ok": true,
     "reviewRequired": true,
-    "reviewNote": "Metric warnings were visually reviewed; the ordered loop remains coherent and boundary variation reflects natural wing expansion rather than a registration or scale pop."
+    "reviewNote": "Metric warnings were visually reviewed; crystalline-wing openings, occlusion, and parallax remain coherent with no snap, scale pop, clipping, identity drift, or broken attachment."
   }
 }

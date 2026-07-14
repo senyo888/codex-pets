@@ -39,11 +39,11 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | 002 | [**AetherWing**](pets/aetherwing/README.md) | A flight-first 3D CGI runtime sentinel with metallic armour, glass optics, and the Humidity Intelligence crest. | Sprite v2 | Validated and ready |
 | 003 | [**AetherCore**](pets/aethercore/README.md) | A calm clockwork governance engine for continuity, coherence, and visible drift. | Sprite v2 | Validated and ready |
 | 004 | [**AetherMite**](pets/aethermite/README.md) | A systems tinkerer for diagnostics, refinement, and deterministic micro-innovation. | Sprite v2 | Validated and ready |
-| 005 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
+| 005 | [**Aetherbite**](pets/aetherbite/README.md) | A cinematic CGI systems tinkerer with layered bio-mechanical armour, crystalline wing depth, and expressive motion. | Sprite v2 | Validated and ready |
 | 006 | [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
 | 007 | [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form, built to counter drift and protect runtime integrity. | Sprite v2 | Validated and ready |
 
-Bella and AetherWing now showcase the catalogue's modern CGI direction from two distinct identities: Bella uses layered crystal couture and graceful coherence-focused motion, while AetherWing uses hard-surface armour, glass optics, and flight-first mechanical movement. Their animated GIFs above are rendered directly from their current validated atlases.
+Bella, AetherWing, and Aetherbite showcase the catalogue's modern CGI direction through distinct identities: Bella uses layered crystal couture, AetherWing uses flight-first hard-surface armour, and Aetherbite combines articulated bio-mechanics with translucent wing parallax and systems-tinkerer motion. Their animated GIFs above are rendered directly from their current validated atlases.
 
 ## Install a pet
 
@@ -96,7 +96,7 @@ All seven pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published s
 | AetherWing | `c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa` | [Summary](pets/aetherwing/qa/validation-summary.json) |
 | AetherCore | `de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205` | [Summary](pets/aethercore/qa/validation-summary.json) |
 | AetherMite | `d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75` | [Summary](pets/aethermite/qa/validation-summary.json) |
-| Aetherbite | `92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37` | [Summary](pets/aetherbite/qa/validation-summary.json) |
+| Aetherbite | `18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346` | [Summary](pets/aetherbite/qa/validation-summary.json) |
 | Calian | `86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34` | [Summary](pets/calian/qa/validation-summary.json) |
 | Scarlet | `41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b` | [Summary](pets/scarlet/qa/validation-summary.json) |
 
