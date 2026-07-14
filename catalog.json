@@ -34,12 +34,12 @@
     {
       "id": "aethermite",
       "displayName": "AetherMite",
-      "description": "A bio-digital systems champion for Humidity Intelligence, focused on diagnostics, refinement, and deterministic micro-innovation.",
+      "description": "A dimensional CGI bio-digital systems champion for Humidity Intelligence, with a layered bronze-and-silver shell and luminous environmental core.",
       "spriteVersionNumber": 2,
       "spritesheetPath": "pets/aethermite/spritesheet.webp",
       "previewPath": "pets/aethermite/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aethermite/",
-      "sha256": "d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75"
+      "sha256": "13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384"
     },
     {
       "id": "aetherbite",

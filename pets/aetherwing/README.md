@@ -28,9 +28,7 @@ Four modern articulated wings make flight her chosen form of movement. Direction
 
 | Property | Value |
 | --- | --- |
-| Catalogue number | **Pet 002** |
 | Pet id | `aetherwing` |
-| Canonical name | `AetherWing` |
 | Sprite contract | v2 |
 | Atlas | `1536 × 2288` WebP |
 | Cell size | `192 × 208` |

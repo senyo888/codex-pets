@@ -1,7 +1,7 @@
 {
   "ok": true,
   "petId": "aethermite",
-  "validatedAt": "2026-07-12",
+  "validatedAt": "2026-07-14",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +9,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75",
+  "sha256": "13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -26,11 +26,11 @@
     "semanticPasses": 4,
     "semanticWarnings": 12,
     "semanticFailures": 0,
-    "reviewNote": "Intermediate-axis ambiguity was accepted after labeled normal-size review confirmed the intended clockwise quadrants without reversal."
+    "reviewNote": "Intermediate-axis ambiguity was accepted after labeled review confirmed the intended clockwise screen-glyph progression without reversal."
   },
   "continuity": {
     "ok": true,
     "reviewRequired": true,
-    "reviewNote": "Metric warnings were visually reviewed; no conspicuous snap, clipping, identity drift, or broken attachment was present."
+    "reviewNote": "Metric warnings and intentional shell gaps were visually reviewed; no conspicuous snap, clipping, identity drift, or broken attachment was present."
   }
 }
