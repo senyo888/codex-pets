@@ -37,7 +37,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | --- | --- | --- | --- | --- |
 | 001 | [**Bella**](pets/bella/README.md) | A premium CGI crystalline guardian with layered couture armour, six-wing depth, graceful glides, and a curtsy jump. | Sprite v2 | Validated and ready |
 | 002 | [**AetherWing**](pets/aetherwing/README.md) | A flight-first 3D CGI runtime sentinel with metallic armour, glass optics, and the Humidity Intelligence crest. | Sprite v2 | Validated and ready |
-| 003 | [**AetherCore**](pets/aethercore/README.md) | A calm clockwork governance engine for continuity, coherence, and visible drift. | Sprite v2 | Validated and ready |
+| 003 | [**AetherCore**](pets/aethercore/README.md) | A polished metallic governance engine with expressive sapphire eyes and a rotating continuity core. | Sprite v2 | Validated and ready |
 | 004 | [**AetherMite**](pets/aethermite/README.md) | A systems tinkerer for diagnostics, refinement, and deterministic micro-innovation. | Sprite v2 | Validated and ready |
 | 005 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
 | 006 | [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
@@ -94,7 +94,7 @@ All seven pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published s
 | --- | --- | --- |
 | Bella | `548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d` | [Summary](pets/bella/qa/validation-summary.json) |
 | AetherWing | `c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa` | [Summary](pets/aetherwing/qa/validation-summary.json) |
-| AetherCore | `de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205` | [Summary](pets/aethercore/qa/validation-summary.json) |
+| AetherCore | `5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd` | [Summary](pets/aethercore/qa/validation-summary.json) |
 | AetherMite | `d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75` | [Summary](pets/aethermite/qa/validation-summary.json) |
 | Aetherbite | `92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37` | [Summary](pets/aetherbite/qa/validation-summary.json) |
 | Calian | `86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34` | [Summary](pets/calian/qa/validation-summary.json) |
