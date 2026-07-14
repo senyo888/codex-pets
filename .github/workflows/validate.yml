@@ -1,0 +1,29 @@
+name: Validate catalogue contract
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  catalog-contract:
+    name: catalog-contract
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Validate canonical catalogue surfaces
+        run: python3 scripts/validate_catalog.py --base-ref "${{ github.event.pull_request.base.sha }}"
+
+      - name: Check patch whitespace
+        run: git diff --check "${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"

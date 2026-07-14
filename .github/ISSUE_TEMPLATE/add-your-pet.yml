@@ -26,13 +26,38 @@ body:
       placeholder: "Example: orbit"
 
   - type: textarea
-    id: personality
+    id: canonical-description
     attributes:
-      label: Description and personality
-      description: Tell us what the pet looks like, what makes it distinctive, and how it should feel in motion.
-      placeholder: A short description plus a few defining traits.
+      label: Canonical one-sentence description
+      description: Describe the package identity in one sentence suitable for installer metadata.
+      placeholder: A clear sentence describing the pet and its purpose.
     validations:
       required: true
+
+  - type: input
+    id: short-role
+    attributes:
+      label: Short role
+      description: A compact public role for the catalogue card.
+      placeholder: "Example: Orbital systems scout"
+    validations:
+      required: true
+
+  - type: input
+    id: traits
+    attributes:
+      label: Three defining traits
+      description: Provide exactly three short traits, separated by commas.
+      placeholder: "Example: Curious, precise, resilient"
+    validations:
+      required: true
+
+  - type: textarea
+    id: personality
+    attributes:
+      label: Personality, design, and motion
+      description: Tell us what makes the pet distinctive and how it should feel in motion.
+      placeholder: Optional longer-form personality and visual direction.
 
   - type: dropdown
     id: readiness

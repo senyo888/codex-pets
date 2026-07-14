@@ -1,7 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "pets": [
     {
+      "catalogueNumber": "001",
+      "publicationState": "published",
       "id": "bella",
       "displayName": "Bella",
       "description": "The 1 True Source, a luminous crystalline coherence guardian with layered dimensional detail and deterministic grace.",
@@ -9,9 +11,17 @@
       "spritesheetPath": "pets/bella/spritesheet.webp",
       "previewPath": "pets/bella/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/bella/",
-      "sha256": "548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d"
+      "sha256": "548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d",
+      "presentation": {
+        "shortRole": "Dimensional crystalline guardian",
+        "summary": "The 1 True Source, modernized with layered couture armour, six-wing depth, graceful glides, and a curtsy jump.",
+        "traits": ["Dimensional", "Precise", "Graceful"],
+        "previewAlt": "Bella's dimensional idle animation"
+      }
     },
     {
+      "catalogueNumber": "002",
+      "publicationState": "published",
       "id": "aetherwing",
       "displayName": "AetherWing",
       "description": "A calm guardian companion for Humidity Intelligence, protecting deterministic runtime control, architectural discipline, and truth-backed dashboard behaviour.",
@@ -19,9 +29,17 @@
       "spritesheetPath": "pets/aetherwing/spritesheet.webp",
       "previewPath": "pets/aetherwing/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aetherwing/",
-      "sha256": "c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa"
+      "sha256": "c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa",
+      "presentation": {
+        "shortRole": "Flight-first runtime sentinel",
+        "summary": "A premium dimensional guardian with metallic armour, glass optics, and truth-backed runtime discipline.",
+        "traits": ["Flight-first", "Sceptical", "Disciplined"],
+        "previewAlt": "AetherWing's calm idle animation"
+      }
     },
     {
+      "catalogueNumber": "003",
+      "publicationState": "published",
       "id": "aethercore",
       "displayName": "AetherCore",
       "description": "A calm governance-engine pet for Humidity Intelligence continuity and coherence.",
@@ -29,9 +47,17 @@
       "spritesheetPath": "pets/aethercore/spritesheet.webp",
       "previewPath": "pets/aethercore/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aethercore/",
-      "sha256": "5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd"
+      "sha256": "5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd",
+      "presentation": {
+        "shortRole": "Governance engine",
+        "summary": "The polished Continuity Engine: sapphire-eyed, halo-guided, and driven by a visible clockwork core.",
+        "traits": ["Measured", "Dependable", "Quietly vigilant"],
+        "previewAlt": "AetherCore's polished metallic idle animation"
+      }
     },
     {
+      "catalogueNumber": "004",
+      "publicationState": "published",
       "id": "aethermite",
       "displayName": "AetherMite",
       "description": "A premium dimensional bio-digital systems champion for Humidity Intelligence, with a layered bronze-and-silver shell and luminous environmental core.",
@@ -39,9 +65,17 @@
       "spritesheetPath": "pets/aethermite/spritesheet.webp",
       "previewPath": "pets/aethermite/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aethermite/",
-      "sha256": "13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384"
+      "sha256": "13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384",
+      "presentation": {
+        "shortRole": "Dimensional systems tinkerer",
+        "summary": "A dimensional bio-digital champion with a layered metallic shell, luminous glass optics, and an environmental core.",
+        "traits": ["Curious", "Inventive", "Keen-eyed"],
+        "previewAlt": "AetherMite's dimensional idle animation"
+      }
     },
     {
+      "catalogueNumber": "005",
+      "publicationState": "published",
       "id": "aetherbite",
       "displayName": "Aetherbite",
       "description": "Aetherbite is Humidity Intelligence's bio-digital systems tinkerer, shaped through cinematic dimensional spritework with crystalline wings, layered articulated armour, and expressive motion.",
@@ -49,9 +83,17 @@
       "spritesheetPath": "pets/aetherbite/spritesheet.webp",
       "previewPath": "pets/aetherbite/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/aetherbite/",
-      "sha256": "18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346"
+      "sha256": "18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346",
+      "presentation": {
+        "shortRole": "Cinematic systems tinkerer",
+        "summary": "Humidity Intelligence's layered bio-mechanical tinkerer, with crystalline wing depth and expressive articulated motion.",
+        "traits": ["Energetic", "Resolute", "Inventive"],
+        "previewAlt": "Aetherbite's cinematic idle animation"
+      }
     },
     {
+      "catalogueNumber": "006",
+      "publicationState": "published",
       "id": "calian",
       "displayName": "Calian",
       "description": "A calm, disciplined agent warrior who defends code, resolves threats, and keeps complex systems under deliberate control.",
@@ -59,9 +101,17 @@
       "spritesheetPath": "pets/calian/spritesheet.webp",
       "previewPath": "pets/calian/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/calian/",
-      "sha256": "86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34"
+      "sha256": "86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34",
+      "presentation": {
+        "shortRole": "Code sentinel",
+        "summary": "A disciplined agent warrior who resolves threats and keeps complex systems under deliberate control.",
+        "traits": ["Composed", "Tactical", "Steadfast"],
+        "previewAlt": "Calian's calm idle animation"
+      }
     },
     {
+      "catalogueNumber": "007",
+      "publicationState": "published",
       "id": "scarlet",
       "displayName": "Scarlet",
       "description": "Scarlet is Calian's evolved form: a poised agent warrior who patrols code paths, counters drift, and protects execution integrity without noise or theatrics.",
@@ -69,7 +119,13 @@
       "spritesheetPath": "pets/scarlet/spritesheet.webp",
       "previewPath": "pets/scarlet/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/scarlet/",
-      "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b"
+      "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b",
+      "presentation": {
+        "shortRole": "Execution defender",
+        "summary": "Calian's evolved form: a poised agent warrior who counters drift and protects execution integrity without noise or theatrics.",
+        "traits": ["Poised", "Vigilant", "Exacting"],
+        "previewAlt": "Scarlet's calm idle animation"
+      }
     }
   ]
 }

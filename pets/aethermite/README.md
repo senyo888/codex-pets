@@ -4,7 +4,7 @@
 
 **The Systems Tinkerer**
 
-<img src="preview.gif?v=24eb2a800e48" alt="AetherMite dimensional idle animation" width="240">
+<img src="preview.gif?v=24eb2a800e48" alt="AetherMite's dimensional idle animation" width="240">
 
 *A premium dimensional Humidity Intelligence champion with a layered mechanical shell and luminous environmental core.*
 

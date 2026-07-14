@@ -4,7 +4,7 @@
 
 **The Bio-Digital Systems Tinkerer**
 
-<img src="preview.gif?v=1c09298b9c11" alt="Aetherbite cinematic idle animation" width="240">
+<img src="preview.gif?v=1c09298b9c11" alt="Aetherbite's cinematic idle animation" width="240">
 
 *Humidity Intelligence's cinematic dimensional systems tinkerer, with crystalline wings, layered articulated armour, and expressive motion.*
 

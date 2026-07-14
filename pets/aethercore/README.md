@@ -4,7 +4,7 @@
 
 **The Continuity Engine**
 
-<img src="preview.gif?v=ec0aa941a348" alt="AetherCore idle animation" width="240">
+<img src="preview.gif?v=ec0aa941a348" alt="AetherCore's polished metallic idle animation" width="240">
 
 *A calm clockwork guardian built to keep decisions connected, drift visible, and governance coherent.*
 
