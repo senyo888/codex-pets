@@ -4,7 +4,7 @@
 
 **The Code Sentinel**
 
-<img src="preview.gif" alt="Calian idle animation" width="240">
+<img src="preview.gif?v=64524df4936c" alt="Calian idle animation" width="240">
 
 *A composed agent warrior built to defend code and keep complex systems under deliberate control.*
 

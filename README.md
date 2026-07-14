@@ -12,13 +12,13 @@ An independent community catalogue of custom animated pets for the Codex desktop
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
 
-<a href="pets/bella/README.md"><img src="pets/bella/preview.gif" alt="Bella CGI idle animation" width="150"></a>
-<a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif" alt="AetherWing idle animation" width="150"></a>
-<a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif" alt="AetherCore idle animation" width="150"></a>
-<a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif" alt="AetherMite CGI idle animation" width="150"></a>
-<a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif" alt="Aetherbite idle animation" width="150"></a>
-<a href="pets/calian/README.md"><img src="pets/calian/preview.gif" alt="Calian idle animation" width="150"></a>
-<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif" alt="Scarlet idle animation" width="150"></a>
+<a href="pets/bella/README.md"><img src="pets/bella/preview.gif?v=1d01e149813d" alt="Bella dimensional idle animation" width="150"></a>
+<a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif?v=7d8ee08c4885" alt="AetherWing idle animation" width="150"></a>
+<a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif?v=ec0aa941a348" alt="AetherCore idle animation" width="150"></a>
+<a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=24eb2a800e48" alt="AetherMite dimensional idle animation" width="150"></a>
+<a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=1c09298b9c11" alt="Aetherbite idle animation" width="150"></a>
+<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=64524df4936c" alt="Calian idle animation" width="150"></a>
+<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=033f7e8c9854" alt="Scarlet idle animation" width="150"></a>
 
 ### [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
 
@@ -35,15 +35,15 @@ An independent community catalogue of custom animated pets for the Codex desktop
 
 | No. | Pet | Personality | Format | Status |
 | --- | --- | --- | --- | --- |
-| 001 | [**Bella**](pets/bella/README.md) | A premium CGI crystalline guardian with layered couture armour, six-wing depth, graceful glides, and a curtsy jump. | Sprite v2 | Validated and ready |
-| 002 | [**AetherWing**](pets/aetherwing/README.md) | A flight-first 3D CGI runtime sentinel with metallic armour, glass optics, and the Humidity Intelligence crest. | Sprite v2 | Validated and ready |
+| 001 | [**Bella**](pets/bella/README.md) | A premium dimensional crystalline guardian with layered couture armour, six-wing depth, graceful glides, and a curtsy jump. | Sprite v2 | Validated and ready |
+| 002 | [**AetherWing**](pets/aetherwing/README.md) | A flight-first dimensional runtime sentinel with metallic armour, glass optics, and the Humidity Intelligence crest. | Sprite v2 | Validated and ready |
 | 003 | [**AetherCore**](pets/aethercore/README.md) | A polished metallic governance engine with expressive sapphire eyes and a rotating continuity core. | Sprite v2 | Validated and ready |
-| 004 | [**AetherMite**](pets/aethermite/README.md) | A dimensional CGI systems tinkerer with a layered bronze-and-silver shell and luminous environmental core. | Sprite v2 | Validated and ready |
+| 004 | [**AetherMite**](pets/aethermite/README.md) | A premium dimensional systems tinkerer with a layered bronze-and-silver shell and luminous environmental core. | Sprite v2 | Validated and ready |
 | 005 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
 | 006 | [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
 | 007 | [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form, built to counter drift and protect runtime integrity. | Sprite v2 | Validated and ready |
 
-Bella, AetherWing, and AetherMite showcase the catalogue's modern CGI direction from three distinct identities: Bella uses layered crystal couture and graceful coherence-focused motion, AetherWing uses flight-first hard-surface armour, and AetherMite uses compact mechanical shell depth with luminous environmental optics. Their animated GIFs above are rendered directly from their current validated atlases.
+Bella, AetherWing, AetherCore, AetherMite, and Aetherbite showcase the catalogue's premium dimensional spritework through distinct identities: Bella uses layered crystal couture and graceful coherence-focused motion, AetherWing uses flight-first hard-surface armour, AetherCore uses polished clockwork mechanics, AetherMite uses compact mechanical shell depth, and Aetherbite uses crystalline bio-digital articulation. Every animated GIF above is rendered directly from its current validated atlas.
 
 ## Install a pet
 
@@ -96,7 +96,7 @@ All seven pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published s
 | AetherWing | `c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa` | [Summary](pets/aetherwing/qa/validation-summary.json) |
 | AetherCore | `5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd` | [Summary](pets/aethercore/qa/validation-summary.json) |
 | AetherMite | `13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384` | [Summary](pets/aethermite/qa/validation-summary.json) |
-| Aetherbite | `92803b181a6dc20fbdf65a4867f5f1b34593c918bb3baacb1f73f07199b81a37` | [Summary](pets/aetherbite/qa/validation-summary.json) |
+| Aetherbite | `18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346` | [Summary](pets/aetherbite/qa/validation-summary.json) |
 | Calian | `86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34` | [Summary](pets/calian/qa/validation-summary.json) |
 | Scarlet | `41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b` | [Summary](pets/scarlet/qa/validation-summary.json) |
 

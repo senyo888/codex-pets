@@ -4,7 +4,7 @@
 
 **The Execution Defender**
 
-<img src="preview.gif" alt="Scarlet idle animation" width="240">
+<img src="preview.gif?v=033f7e8c9854" alt="Scarlet idle animation" width="240">
 
 *Calian's evolved form: a poised agent warrior who patrols code paths and protects execution integrity without noise or theatrics.*
 

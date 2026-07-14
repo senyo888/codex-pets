@@ -4,7 +4,7 @@
 
 **Pet 002 · The Runtime Sentinel**
 
-<img src="preview.gif" alt="AetherWing idle animation" width="240">
+<img src="preview.gif?v=7d8ee08c4885" alt="AetherWing idle animation" width="240">
 
 *A flight-first guardian of deterministic control, architectural discipline, and truth-backed runtime behaviour.*
 
@@ -20,7 +20,7 @@ Her approach is measured and sceptical. She values clean tests, explicit reasoni
 
 ## Design
 
-AetherWing is rendered as a sharp premium 3D CGI character while retaining her original white, cyan, gold, black, and dark-navy palette. Her polished metallic and ceramic-metal shell is paired with a convex smoked-glass eye and a glass chest badge carrying the official [Humidity Intelligence](https://github.com/senyo888/humidity-intelligence) glyph.
+AetherWing uses sharp premium dimensional spritework while retaining her original white, cyan, gold, black, and dark-navy palette. Her polished metallic and ceramic-metal shell is paired with a convex smoked-glass eye and a glass chest badge carrying the official [Humidity Intelligence](https://github.com/senyo888/humidity-intelligence) glyph.
 
 Four modern articulated wings make flight her chosen form of movement. Directional travel uses visible raised, mid, lowered, and recovery flap positions, while her improved mechanical legs articulate into an aerodynamic rearward posture rather than walking or running on the ground.
 

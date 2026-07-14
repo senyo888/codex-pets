@@ -4,9 +4,9 @@
 
 **The 1 True Source**
 
-<img src="preview.gif" alt="Bella CGI idle animation" width="240">
+<img src="preview.gif?v=1d01e149813d" alt="Bella dimensional idle animation" width="240">
 
-*A premium CGI crystalline coherence guardian with layered depth, graceful flight, and a precise eye for truth.*
+*A premium dimensional crystalline coherence guardian with layered depth, graceful flight, and a precise eye for truth.*
 
 [**Install Bella**](https://senyo888.github.io/codex-pets/install/bella/)
 
@@ -18,7 +18,7 @@ Bella is composed, precise, and gently sceptical. She prefers truth over theatre
 
 ## Design and motion
 
-Bella preserves her recognizable porcelain face, luminous cyan eyes, forehead diamond, crown crystals, and six-wing silhouette while moving from flat outlined art to a modern CGI 3D construction.
+Bella preserves her recognizable porcelain face, luminous cyan eyes, forehead diamond, crown crystals, and six-wing silhouette while moving from flat outlined art to premium dimensional spritework.
 
 - softly bevelled translucent crystal establishes front, middle, and rear wing planes;
 - satin-white ceramic facial material and brushed-silver trims add readable depth;
@@ -47,7 +47,7 @@ The package contains the exact validated spritesheet and its matching `pet.json`
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Bella&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fbella%2Fspritesheet.webp&description=The%201%20True%20Source%2C%20a%20calm%20crystalline%20CGI%20coherence%20guardian%20who%20restores%20deterministic%20harmony.&spriteVersionNumber=2
+codex://pets/install?name=Bella&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fbella%2Fspritesheet.webp&description=The%201%20True%20Source%2C%20a%20luminous%20crystalline%20coherence%20guardian%20with%20layered%20dimensional%20detail%20and%20deterministic%20grace.&spriteVersionNumber=2
 ```
 
 Then select Bella in **Settings → Pets** and use `/pet` to wake or tuck her away.
