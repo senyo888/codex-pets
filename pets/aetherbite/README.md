@@ -2,11 +2,11 @@
 
 # Aetherbite
 
-**The Bio-Digital CGI Tinkerer**
+**The Bio-Digital Systems Tinkerer**
 
-<img src="preview.gif" alt="Aetherbite CGI idle animation" width="240">
+<img src="preview.gif?v=1c09298b9c11" alt="Aetherbite cinematic idle animation" width="240">
 
-*Humidity Intelligence's cinematic CGI systems tinkerer, with crystalline wings, layered articulated armour, and depth-rich expressive motion.*
+*Humidity Intelligence's cinematic dimensional systems tinkerer, with crystalline wings, layered articulated armour, and expressive motion.*
 
 [**Install Aetherbite**](https://senyo888.github.io/codex-pets/install/aetherbite/)
 
@@ -20,7 +20,7 @@ Its silver-and-copper frame, crystalline cyan wings, dark luminous visor, and Hu
 
 ## Design and motion
 
-Aetherbite now uses a modern CGI 3D construction without changing its recognizable silhouette or state semantics.
+Aetherbite now uses cinematic dimensional spritework without changing its recognizable silhouette or state semantics.
 
 - overlapping armour plates, recessed joints, bevels, and ambient occlusion create readable front-to-back body depth;
 - polished silver, aged copper, dark visor glass, and restrained cyan emission separate the materials cleanly;
@@ -47,7 +47,7 @@ The package contains the exact validated spritesheet and its matching `pet.json`
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Aetherbite&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Faetherbite%2Fspritesheet.webp&description=Aetherbite%20is%20Humidity%20Intelligence%27s%20bio-digital%20systems%20tinkerer%2C%20modernized%20in%20cinematic%20CGI%203D%20with%20crystalline%20wings%2C%20layered%20articulated%20armour%2C%20and%20expressive%20depth-rich%20motion.&spriteVersionNumber=2
+codex://pets/install?name=Aetherbite&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Faetherbite%2Fspritesheet.webp&description=Aetherbite%20is%20Humidity%20Intelligence%27s%20bio-digital%20systems%20tinkerer%2C%20shaped%20through%20cinematic%20dimensional%20spritework%20with%20crystalline%20wings%2C%20layered%20articulated%20armour%2C%20and%20expressive%20motion.&spriteVersionNumber=2
 ```
 
 Then select Aetherbite in **Settings → Pets** and use `/pet` to wake or tuck it away.
