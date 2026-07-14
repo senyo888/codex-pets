@@ -1,7 +1,7 @@
 {
   "ok": true,
   "petId": "aethercore",
-  "validatedAt": "2026-07-12",
+  "validatedAt": "2026-07-13",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +9,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205",
+  "sha256": "5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -23,14 +23,26 @@
   "directionValidation": {
     "blindValidationOk": true,
     "cardinalGatesPassed": 4,
-    "semanticPasses": 8,
-    "semanticWarnings": 8,
+    "semanticPasses": 12,
+    "semanticWarnings": 4,
     "semanticFailures": 0,
-    "reviewNote": "Intermediate-axis warnings were accepted after labeled normal-size and ordered-loop review confirmed the intended quadrants without reversal."
+    "reviewNote": "Four near-axis intermediate warnings were accepted after labeled normal-size and ordered-loop review confirmed the intended quadrants without reversal; all four cardinals passed three-reviewer blind validation."
   },
   "continuity": {
     "ok": true,
     "reviewRequired": true,
-    "reviewNote": "Metric warnings were visually reviewed; no snap, scale pop, clipping, identity drift, or broken attachment was present."
+    "reviewNote": "The 157.5-to-180 diff and area outlier was visually reviewed as the natural change from a narrow three-quarter pose to the fuller front-down pose; no visible snap, scale pop, clipping, identity drift, or broken attachment was present."
+  },
+  "visualUpgrade": {
+    "metallicFinish": "brushed ivory titanium, champagne gold, polished brass, and dark gunmetal recesses",
+    "eyes": "deep sapphire-glass eye modules with eyelid and brow expression",
+    "halo": "segmented technology ring mechanically mounted by visible yokes",
+    "coreMotion": "deliberate chest-cog rotation, including a restrained powered-hover cycle"
+  },
+  "finalVisualQa": {
+    "ok": true,
+    "motionRowsReviewed": 9,
+    "lookDirectionsReviewed": 16,
+    "repairRows": 0
   }
 }

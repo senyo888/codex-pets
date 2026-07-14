@@ -16,7 +16,7 @@
 
 AetherCore is measured, dependable, and quietly vigilant. It treats continuity as a living system: decisions should remain traceable, architectural intent should survive change, and hidden drift should never be allowed to accumulate unnoticed.
 
-Its ivory shell and brass mechanism frame a visible governance core—a small machine with a strong preference for orderly truth.
+Its evolved ivory-and-champagne shell now carries a richer brushed-metal finish, deeper sapphire-glass eyes, and a segmented technology halo fixed to the head by visible mechanical yokes. The chest governance core is no longer decorative: its cog turns deliberately through idle, processing, review, waiting, movement, and a restrained powered-hover cycle.
 
 ## Package
 
@@ -27,7 +27,7 @@ Its ivory shell and brass mechanism frame a visible governance core—a small ma
 | Atlas | `1536 × 2288` WebP |
 | Cell size | `192 × 208` |
 | Animation rows | 9 standard + 2 look-direction rows |
-| SHA-256 | `de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205` |
+| SHA-256 | `5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd` |
 
 The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation editing was applied before publication.
 
@@ -50,8 +50,10 @@ AetherCore passed the Codex v2 atlas validator with:
 - no transparent-pixel RGB residue;
 - no chroma fringe after the authoritative cleanup pass;
 - all four cardinal look directions confirmed;
-- no failed semantic direction verdicts;
-- reviewed intermediate-direction and continuity warnings with no visible reversal, clipping, identity drift, or broken attachment.
+- 12 passed and 4 reviewed intermediate semantic direction verdicts, with no failures;
+- reviewed near-axis blind-direction warnings with no labeled-loop reversal;
+- one reviewed `157.5 → 180` continuity outlier caused by the natural change from a narrow three-quarter pose to the fuller front-down pose, with no visible snap, scale pop, clipping, identity drift, or broken attachment;
+- independent final visual QA across all nine motion previews and both look rows.
 
 [Read the validation summary](qa/validation-summary.json)
 
