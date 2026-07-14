@@ -12,7 +12,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
 
-<a href="pets/bella/README.md"><img src="pets/bella/preview.gif" alt="Bella idle animation" width="150"></a>
+<a href="pets/bella/README.md"><img src="pets/bella/preview.gif" alt="Bella CGI idle animation" width="150"></a>
 <a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif" alt="AetherWing idle animation" width="150"></a>
 <a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif" alt="AetherCore idle animation" width="150"></a>
 <a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif" alt="AetherMite idle animation" width="150"></a>
@@ -35,13 +35,15 @@ An independent community catalogue of custom animated pets for the Codex desktop
 
 | No. | Pet | Personality | Format | Status |
 | --- | --- | --- | --- | --- |
-| 001 | [**Bella**](pets/bella/README.md) | A crystalline guardian of clarity, truth, and deterministic coherence. | Sprite v2 | Validated and ready |
+| 001 | [**Bella**](pets/bella/README.md) | A premium CGI crystalline guardian with layered couture armour, six-wing depth, graceful glides, and a curtsy jump. | Sprite v2 | Validated and ready |
 | 002 | [**AetherWing**](pets/aetherwing/README.md) | A flight-first 3D CGI runtime sentinel with metallic armour, glass optics, and the Humidity Intelligence crest. | Sprite v2 | Validated and ready |
 | 003 | [**AetherCore**](pets/aethercore/README.md) | A calm clockwork governance engine for continuity, coherence, and visible drift. | Sprite v2 | Validated and ready |
 | 004 | [**AetherMite**](pets/aethermite/README.md) | A systems tinkerer for diagnostics, refinement, and deterministic micro-innovation. | Sprite v2 | Validated and ready |
 | 005 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
 | 006 | [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
 | 007 | [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form, built to counter drift and protect runtime integrity. | Sprite v2 | Validated and ready |
+
+Bella and AetherWing now showcase the catalogue's modern CGI direction from two distinct identities: Bella uses layered crystal couture and graceful coherence-focused motion, while AetherWing uses hard-surface armour, glass optics, and flight-first mechanical movement. Their animated GIFs above are rendered directly from their current validated atlases.
 
 ## Install a pet
 
@@ -90,7 +92,7 @@ All seven pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published s
 
 | Pet | SHA-256 | Validation |
 | --- | --- | --- |
-| Bella | `ea6eb944f421c673d76e142e1f88ad09e5d3bc13bb4043619ea120cea5a11db5` | [Summary](pets/bella/qa/validation-summary.json) |
+| Bella | `548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d` | [Summary](pets/bella/qa/validation-summary.json) |
 | AetherWing | `c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa` | [Summary](pets/aetherwing/qa/validation-summary.json) |
 | AetherCore | `de543a1dc1ad397a9cf0bd9f51235ffe78408b01d2b37f4a44cdd9cbd1a98205` | [Summary](pets/aethercore/qa/validation-summary.json) |
 | AetherMite | `d49b0269b6d9ed530311ec81c5dbd52c3024fc317d5d3731a1f154dce18aaf75` | [Summary](pets/aethermite/qa/validation-summary.json) |

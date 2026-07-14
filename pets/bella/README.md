@@ -4,9 +4,9 @@
 
 **The 1 True Source**
 
-<img src="preview.gif" alt="Bella idle animation" width="240">
+<img src="preview.gif" alt="Bella CGI idle animation" width="240">
 
-*A calm crystalline guardian who brings clarity, coherence, and just enough sparkle to serious work.*
+*A premium CGI crystalline coherence guardian with layered depth, graceful flight, and a precise eye for truth.*
 
 [**Install Bella**](https://senyo888.github.io/codex-pets/install/bella/)
 
@@ -16,13 +16,18 @@
 
 Bella is composed, precise, and gently sceptical. She prefers truth over theatre, deterministic systems over hidden magic, and a clean review over an enthusiastic guess.
 
-Her crystalline form changes expression with the work:
+## Design and motion
 
-- cyan for calm and ready;
-- green for active work;
-- violet for focused review;
-- warm pink for a friendly wave;
-- red when something has failed and needs attention.
+Bella preserves her recognizable porcelain face, luminous cyan eyes, forehead diamond, crown crystals, and six-wing silhouette while moving from flat outlined art to a modern CGI 3D construction.
+
+- softly bevelled translucent crystal establishes front, middle, and rear wing planes;
+- satin-white ceramic facial material and brushed-silver trims add readable depth;
+- layered couture-like armour and skirt crystals replace flat painted clothing;
+- dimensional eyelids, brows, lighting, occlusion, and foreshortening carry her expressions;
+- directional travel remains a graceful airborne glide rather than foot-running;
+- her jump row now performs a poised five-frame airborne curtsy.
+
+The remaining standard states retain Bella's established movement language, and all 16 look directions preserve her original clockwise choreography with physical eye, head, wing, and clothing perspective.
 
 ## Package
 
@@ -33,7 +38,7 @@ Her crystalline form changes expression with the work:
 | Atlas | `1536 × 2288` WebP |
 | Cell size | `192 × 208` |
 | Animation rows | 9 standard + 2 look-direction rows |
-| SHA-256 | `ea6eb944f421c673d76e142e1f88ad09e5d3bc13bb4043619ea120cea5a11db5` |
+| SHA-256 | `548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d` |
 
 The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation editing was applied before publication.
 
@@ -42,7 +47,7 @@ The package contains the exact validated spritesheet and its matching `pet.json`
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Bella&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fbella%2Fspritesheet.webp&description=The%201%20True%20Source%2C%20a%20calm%20crystalline%20harmonic%20source%20engine%20that%20restores%20deterministic%20coherence.&spriteVersionNumber=2
+codex://pets/install?name=Bella&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fbella%2Fspritesheet.webp&description=The%201%20True%20Source%2C%20a%20calm%20crystalline%20CGI%20coherence%20guardian%20who%20restores%20deterministic%20harmony.&spriteVersionNumber=2
 ```
 
 Then select Bella in **Settings → Pets** and use `/pet` to wake or tuck her away.
@@ -55,9 +60,10 @@ Bella passed the Codex v2 atlas validator with:
 - no structural errors or validator warnings;
 - no transparent-pixel RGB residue;
 - no chroma fringe after the authoritative cleanup pass;
-- all four cardinal look directions confirmed;
-- no failed semantic direction verdicts;
-- reviewed continuity warnings with no visible snap, clipping, identity drift, or broken attachment.
+- all four cardinal look directions confirmed by independent blind review;
+- no failed semantic direction verdicts across the complete 16-direction loop;
+- original movement preserved outside the intentional glide and curtsy refinements;
+- reviewed intermediate-axis and continuity warnings with no visible reversal, snap, clipping, identity drift, or broken attachment.
 
 [Read the validation summary](qa/validation-summary.json)
 
