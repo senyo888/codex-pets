@@ -1,7 +1,8 @@
 {
   "ok": true,
   "petId": "bella",
-  "validatedAt": "2026-07-11",
+  "displayName": "Bella",
+  "validatedAt": "2026-07-14",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +10,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "ea6eb944f421c673d76e142e1f88ad09e5d3bc13bb4043619ea120cea5a11db5",
+  "sha256": "548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -27,6 +28,21 @@
     "semanticWarnings": 10,
     "semanticFailures": 0,
     "reviewNote": "Intermediate-axis warnings were accepted after labeled normal-size and ordered-loop review confirmed the intended quadrants without reversal."
+  },
+  "visualDesign": {
+    "style": "premium modern CGI 3D crystalline guardian",
+    "identityPreserved": true,
+    "face": "satin-white ceramic face with dimensional eyelids, brows, and luminous cyan physical eyes",
+    "clothing": "layered couture-like crystal armour with brushed-silver trims and recessed seams",
+    "wings": "six bevelled translucent crystal wings with front, middle, and rear depth planes",
+    "lighting": "consistent upper-left material response with controlled cyan emission"
+  },
+  "movementValidation": {
+    "ok": true,
+    "originalChoreographyPreservedOutsideRequestedRefinements": true,
+    "directionalTravel": "graceful airborne glide with no foot-running",
+    "jumping": "five-frame airborne curtsy",
+    "failedRowExtraction": "stable-slots reviewed as stable and unclipped"
   },
   "continuity": {
     "ok": true,

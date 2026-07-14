@@ -4,12 +4,12 @@
     {
       "id": "bella",
       "displayName": "Bella",
-      "description": "The 1 True Source, a calm crystalline harmonic source engine that restores deterministic coherence.",
+      "description": "The 1 True Source, a calm crystalline CGI coherence guardian who restores deterministic harmony.",
       "spriteVersionNumber": 2,
       "spritesheetPath": "pets/bella/spritesheet.webp",
       "previewPath": "pets/bella/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/bella/",
-      "sha256": "ea6eb944f421c673d76e142e1f88ad09e5d3bc13bb4043619ea120cea5a11db5"
+      "sha256": "548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d"
     },
     {
       "id": "aetherwing",
