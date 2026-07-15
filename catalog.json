@@ -96,16 +96,16 @@
       "publicationState": "published",
       "id": "calian",
       "displayName": "Calian",
-      "description": "A calm, disciplined agent warrior who defends code, resolves threats, and keeps complex systems under deliberate control.",
+      "description": "One half of a disciplined sister act, Calian is a calm, tactical agent warrior who isolates faults and restores deliberate control.",
       "spriteVersionNumber": 2,
       "spritesheetPath": "pets/calian/spritesheet.webp",
       "previewPath": "pets/calian/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/calian/",
-      "sha256": "86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34",
+      "sha256": "4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b",
       "presentation": {
-        "shortRole": "Code sentinel",
-        "summary": "A disciplined agent warrior who resolves threats and keeps complex systems under deliberate control.",
-        "traits": ["Composed", "Tactical", "Steadfast"],
+        "shortRole": "Tactical systems sentinel",
+        "summary": "One half of a disciplined sister act, Calian isolates decisive faults and restores deliberate control with calm, methodical judgement.",
+        "traits": ["Composed", "Tactical", "Methodical"],
         "previewAlt": "Calian's calm idle animation"
       }
     },
@@ -114,15 +114,15 @@
       "publicationState": "published",
       "id": "scarlet",
       "displayName": "Scarlet",
-      "description": "Scarlet is Calian's evolved form: a poised agent warrior who patrols code paths, counters drift, and protects execution integrity without noise or theatrics.",
+      "description": "One half of a disciplined sister act, Scarlet is a poised, vigilant agent warrior who traces drift and protects execution integrity.",
       "spriteVersionNumber": 2,
       "spritesheetPath": "pets/scarlet/spritesheet.webp",
       "previewPath": "pets/scarlet/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/scarlet/",
       "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b",
       "presentation": {
-        "shortRole": "Execution defender",
-        "summary": "Calian's evolved form: a poised agent warrior who counters drift and protects execution integrity without noise or theatrics.",
+        "shortRole": "Execution integrity defender",
+        "summary": "One half of the sister act, Scarlet traces drift across execution paths and closes gaps with vigilant, exacting precision.",
         "traits": ["Poised", "Vigilant", "Exacting"],
         "previewAlt": "Scarlet's calm idle animation"
       }

@@ -17,7 +17,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 <a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif?v=ec0aa941a348" alt="AetherCore's polished metallic idle animation" width="150"></a>
 <a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=24eb2a800e48" alt="AetherMite's dimensional idle animation" width="150"></a>
 <a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=1c09298b9c11" alt="Aetherbite's cinematic idle animation" width="150"></a>
-<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=64524df4936c" alt="Calian's calm idle animation" width="150"></a>
+<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=73d2a0b50334" alt="Calian's calm idle animation" width="150"></a>
 <a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=033f7e8c9854" alt="Scarlet's calm idle animation" width="150"></a>
 
 ## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
@@ -40,10 +40,14 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | 003 | [**AetherCore**](pets/aethercore/README.md) | The polished Continuity Engine: sapphire-eyed, halo-guided, and driven by a visible clockwork core. | Sprite v2 | Validated and ready |
 | 004 | [**AetherMite**](pets/aethermite/README.md) | A dimensional bio-digital champion with a layered metallic shell, luminous glass optics, and an environmental core. | Sprite v2 | Validated and ready |
 | 005 | [**Aetherbite**](pets/aetherbite/README.md) | Humidity Intelligence's layered bio-mechanical tinkerer, with crystalline wing depth and expressive articulated motion. | Sprite v2 | Validated and ready |
-| 006 | [**Calian**](pets/calian/README.md) | A disciplined agent warrior who resolves threats and keeps complex systems under deliberate control. | Sprite v2 | Validated and ready |
-| 007 | [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form: a poised agent warrior who counters drift and protects execution integrity without noise or theatrics. | Sprite v2 | Validated and ready |
+| 006 | [**Calian**](pets/calian/README.md) | One half of a disciplined sister act, Calian isolates decisive faults and restores deliberate control with calm, methodical judgement. | Sprite v2 | Validated and ready |
+| 007 | [**Scarlet**](pets/scarlet/README.md) | One half of the sister act, Scarlet traces drift across execution paths and closes gaps with vigilant, exacting precision. | Sprite v2 | Validated and ready |
 
 Each companion has a distinct identity and animation language. Every animated preview above is rendered directly from its current validated atlas.
+
+### Calian and Scarlet — the sister act
+
+Together, Calian and Scarlet form a sister act whose combined diligence is unmatched: Calian restores deliberate control while Scarlet traces drift through to verified closure.
 
 ## Install a pet
 
@@ -97,7 +101,7 @@ All 7 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Their publi
 | AetherCore | `5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd` | [Summary](pets/aethercore/qa/validation-summary.json) |
 | AetherMite | `13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384` | [Summary](pets/aethermite/qa/validation-summary.json) |
 | Aetherbite | `18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346` | [Summary](pets/aetherbite/qa/validation-summary.json) |
-| Calian | `86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34` | [Summary](pets/calian/qa/validation-summary.json) |
+| Calian | `4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b` | [Summary](pets/calian/qa/validation-summary.json) |
 | Scarlet | `41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b` | [Summary](pets/scarlet/qa/validation-summary.json) |
 
 ## Repository layout

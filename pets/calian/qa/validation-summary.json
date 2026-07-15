@@ -1,7 +1,7 @@
 {
   "ok": true,
   "petId": "calian",
-  "validatedAt": "2026-07-13",
+  "validatedAt": "2026-07-15",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +9,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34",
+  "sha256": "4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -23,10 +23,15 @@
   "directionValidation": {
     "blindValidationOk": true,
     "cardinalGatesPassed": 4,
-    "semanticPasses": 10,
-    "semanticWarnings": 6,
+    "semanticPasses": 13,
+    "semanticWarnings": 3,
     "semanticFailures": 0,
-    "reviewNote": "Intermediate horizontal disagreements were accepted only after labeled normal-size review confirmed the intended quadrants and a continuous ordered loop."
+    "reviewNote": "Three intermediate-axis ambiguities were accepted only after labeled normal-size review confirmed the intended quadrants and a continuous ordered loop."
+  },
+  "interactionValidation": {
+    "deliberateFourFrameWave": true,
+    "orbOnlyWhenPokedOrWaiting": true,
+    "orbAttachedToLeftPalm": true
   },
   "continuity": {
     "ok": true,
