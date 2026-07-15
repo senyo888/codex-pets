@@ -1,7 +1,7 @@
 {
   "ok": true,
   "petId": "scarlet",
-  "validatedAt": "2026-07-13",
+  "validatedAt": "2026-07-15",
   "spriteVersionNumber": 2,
   "format": "WEBP",
   "mode": "RGBA",
@@ -9,7 +9,7 @@
   "height": 2288,
   "columns": 8,
   "rows": 11,
-  "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b",
+  "sha256": "f94405dc13396f703b600f4462342d5928ec7716461c86ad96551fec63b54840",
   "atlasValidation": {
     "ok": true,
     "errors": 0,
@@ -23,14 +23,24 @@
   "directionValidation": {
     "blindValidationOk": true,
     "cardinalGatesPassed": 4,
-    "semanticPasses": 14,
-    "semanticWarnings": 2,
+    "semanticPasses": 11,
+    "semanticWarnings": 5,
     "semanticFailures": 0,
-    "reviewNote": "Two intermediate-axis ambiguities were accepted after labeled normal-size review confirmed the intended quadrants and a coherent ordered loop."
+    "reviewNote": "Five subtle intermediate-axis cues were accepted after labeled normal-size review confirmed the intended quadrants and a coherent ordered loop."
+  },
+  "interactionValidation": {
+    "propulsiveDirectionalFlight": true,
+    "orbOnlyDuringWavingOrJumping": true,
+    "orbAttachedToOnePalm": true
+  },
+  "finalVisualQa": {
+    "ok": true,
+    "blockers": 0,
+    "reviewNote": "Native-size review confirmed crisp CGI materials, proportional anatomy, correct travel direction, and no continuous chroma fringe."
   },
   "continuity": {
     "ok": true,
     "reviewRequired": true,
-    "reviewNote": "Metric warnings were visually reviewed; negative space and silhouette changes remain intentional with no visible snap, scale pop, registration jump, identity change, or broken attachment."
+    "reviewNote": "Metric warnings were visually reviewed with no visible snap, scale pop, registration jump, identity change, or broken attachment."
   }
 }

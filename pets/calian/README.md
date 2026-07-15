@@ -6,7 +6,7 @@
 
 <img src="preview.gif?v=73d2a0b50334" alt="Calian's calm idle animation" width="240">
 
-*A composed agent warrior and one half of a disciplined sister act, known for calm judgement, deliberate control, and exact follow-through.*
+*A composed tactical guardian and one half of a sister act of unmatched diligence, known for calm judgement, deliberate control, and exact follow-through.*
 
 [**Install Calian**](https://senyo888.github.io/codex-pets/install/calian/)
 
@@ -20,7 +20,7 @@ Her strength is disciplined diagnosis: she separates signal from noise, acts wit
 
 ## The sister act
 
-Calian and [Scarlet](../scarlet/README.md) work as a coordinated pair. Calian provides stabilising judgement while Scarlet extends their execution coverage. Together, their combined diligence is unmatched from first assessment to final verification.
+Calian and [Scarlet](../scarlet/README.md) work as a coordinated pair. Calian isolates decisive faults and restores deliberate control; Scarlet carries every correction through to verified closure. Together, they are a sister act of unmatched diligence.
 
 ## Interaction contract
 
@@ -46,7 +46,7 @@ The package contains the exact validated spritesheet and matching sanitized meta
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Calian&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fcalian%2Fspritesheet.webp&description=One%20half%20of%20a%20disciplined%20sister%20act%2C%20Calian%20is%20a%20calm%2C%20tactical%20agent%20warrior%20who%20isolates%20faults%20and%20restores%20deliberate%20control.&spriteVersionNumber=2
+codex://pets/install?name=Calian&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fcalian%2Fspritesheet.webp&description=One%20half%20of%20a%20sister%20act%20of%20unmatched%20diligence%2C%20Calian%20is%20a%20calm%20tactical%20guardian%20who%20isolates%20decisive%20faults%20and%20restores%20deliberate%20control.&spriteVersionNumber=2
 ```
 
 Then select Calian in **Settings → Pets** and use `/pet` to wake or tuck her away.

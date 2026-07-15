@@ -96,7 +96,7 @@
       "publicationState": "published",
       "id": "calian",
       "displayName": "Calian",
-      "description": "One half of a disciplined sister act, Calian is a calm, tactical agent warrior who isolates faults and restores deliberate control.",
+      "description": "One half of a sister act of unmatched diligence, Calian is a calm tactical guardian who isolates decisive faults and restores deliberate control.",
       "spriteVersionNumber": 2,
       "spritesheetPath": "pets/calian/spritesheet.webp",
       "previewPath": "pets/calian/preview.gif",
@@ -104,7 +104,7 @@
       "sha256": "4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b",
       "presentation": {
         "shortRole": "Tactical systems sentinel",
-        "summary": "One half of a disciplined sister act, Calian isolates decisive faults and restores deliberate control with calm, methodical judgement.",
+        "summary": "Calian isolates decisive faults and restores deliberate control with calm, methodical judgement.",
         "traits": ["Composed", "Tactical", "Methodical"],
         "previewAlt": "Calian's calm idle animation"
       }
@@ -114,16 +114,16 @@
       "publicationState": "published",
       "id": "scarlet",
       "displayName": "Scarlet",
-      "description": "One half of a disciplined sister act, Scarlet is a poised, vigilant agent warrior who traces drift and protects execution integrity.",
+      "description": "One half of a sister act of unmatched diligence, Scarlet is a poised CGI guardian who traces drift, protects execution integrity, and drives every correction to verified closure.",
       "spriteVersionNumber": 2,
       "spritesheetPath": "pets/scarlet/spritesheet.webp",
       "previewPath": "pets/scarlet/preview.gif",
       "installPage": "https://senyo888.github.io/codex-pets/install/scarlet/",
-      "sha256": "41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b",
+      "sha256": "f94405dc13396f703b600f4462342d5928ec7716461c86ad96551fec63b54840",
       "presentation": {
-        "shortRole": "Execution integrity defender",
-        "summary": "One half of the sister act, Scarlet traces drift across execution paths and closes gaps with vigilant, exacting precision.",
-        "traits": ["Poised", "Vigilant", "Exacting"],
+        "shortRole": "Propulsive execution guardian",
+        "summary": "Scarlet pairs vigilant drift tracing with propulsive follow-through, carrying every correction to verified closure beside Calian.",
+        "traits": ["Poised", "Vigilant", "Diligent"],
         "previewAlt": "Scarlet's calm idle animation"
       }
     }

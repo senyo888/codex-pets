@@ -2,11 +2,11 @@
 
 # Scarlet
 
-**The Execution Defender**
+**The Propulsive Execution Guardian**
 
-<img src="preview.gif?v=033f7e8c9854" alt="Scarlet's calm idle animation" width="240">
+<img src="preview.gif?v=cd81da15d103" alt="Scarlet's calm idle animation" width="240">
 
-*A poised agent warrior and one half of a disciplined sister act, built to trace drift, protect execution integrity, and close gaps cleanly.*
+*A poised CGI guardian and one half of a sister act of unmatched diligence, built to trace drift and carry every correction to verified closure.*
 
 [**Install Scarlet**](https://senyo888.github.io/codex-pets/install/scarlet/)
 
@@ -16,11 +16,18 @@
 
 Scarlet is poised, vigilant, and exacting. She follows weak signals across the full execution path, contains drift before it spreads, and closes gaps with controlled precision.
 
-Her strength is sustained coverage: she keeps the wider system in view and follows every correction through to verification.
+Her premium CGI identity combines a readable sculpted face, short flame-crown hair, layered scarlet-and-gold armour, and a compact silhouette that remains clear at native pet size. Directional movement is true propulsive flight rather than walking or air-running.
 
 ## The sister act
 
-[Calian](../calian/README.md) and Scarlet work as a coordinated pair. Calian provides stabilising judgement while Scarlet extends their execution coverage. Together, their combined diligence is unmatched from first assessment to final verification.
+[Calian](../calian/README.md) and Scarlet work as a coordinated pair. Calian isolates decisive faults and restores deliberate control; Scarlet carries every correction through to verified closure. Together, they are a sister act of unmatched diligence.
+
+## Interaction contract
+
+- Directional travel is propulsive flight with both feet airborne and no ground-running cadence.
+- The orb appears exactly once in the waving and jumping interactions, attached to one palm.
+- Idle, travel, failure, waiting, processing, review, and all look-direction states remain orb-free.
+- The 16 look directions preserve a stable body anchor while the eyes, head, and neck carry the gaze.
 
 ## Package
 
@@ -31,7 +38,7 @@ Her strength is sustained coverage: she keeps the wider system in view and follo
 | Atlas | `1536 × 2288` WebP |
 | Cell size | `192 × 208` |
 | Animation rows | 9 standard + 2 look-direction rows |
-| SHA-256 | `41cf2190cb49895fb6d444f8885c5dc9712e8187fbd13a785754d0ce5603f24b` |
+| SHA-256 | `f94405dc13396f703b600f4462342d5928ec7716461c86ad96551fec63b54840` |
 
 The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
@@ -40,7 +47,7 @@ The package contains the exact validated spritesheet and matching sanitized meta
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Scarlet&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fscarlet%2Fspritesheet.webp&description=One%20half%20of%20a%20disciplined%20sister%20act%2C%20Scarlet%20is%20a%20poised%2C%20vigilant%20agent%20warrior%20who%20traces%20drift%20and%20protects%20execution%20integrity.&spriteVersionNumber=2
+codex://pets/install?name=Scarlet&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fscarlet%2Fspritesheet.webp&description=One%20half%20of%20a%20sister%20act%20of%20unmatched%20diligence%2C%20Scarlet%20is%20a%20poised%20CGI%20guardian%20who%20traces%20drift%2C%20protects%20execution%20integrity%2C%20and%20drives%20every%20correction%20to%20verified%20closure.&spriteVersionNumber=2
 ```
 
 Then select Scarlet in **Settings → Pets** and use `/pet` to wake or tuck her away.
@@ -54,7 +61,9 @@ Scarlet passed the v2 atlas validator with:
 - no transparent-pixel RGB residue;
 - all four cardinal look directions confirmed;
 - no failed semantic direction verdicts;
-- reviewed intermediate-direction and continuity warnings with no visible reversal, clipping, identity drift, or broken attachment.
+- five reviewed intermediate-direction warnings with no wrong quadrant or loop reversal;
+- propulsive left/right flight and the two-state orb contract confirmed at native size;
+- final independent visual QA passed with no blockers.
 
 [Read the validation summary](qa/validation-summary.json)
 
