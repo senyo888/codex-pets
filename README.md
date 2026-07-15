@@ -20,7 +20,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 <a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=64524df4936c" alt="Calian's calm idle animation" width="150"></a>
 <a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=033f7e8c9854" alt="Scarlet's calm idle animation" width="150"></a>
 
-### [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
+## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
 
 *7 distinct companions, each shipped as a transparent and inspectable v2 package.*
 

@@ -60,11 +60,15 @@ MARKDOWN_REFERENCE = re.compile(
 
 
 class References(HTMLParser):
+    """Collect local reference attributes from parsed HTML."""
+
     def __init__(self) -> None:
+        """Initialize an empty reference collection."""
         super().__init__()
         self.values: list[str] = []
 
     def handle_starttag(self, _tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        """Record href and src values from an HTML start tag."""
         values = dict(attrs)
         for key in ("href", "src"):
             if values.get(key):
@@ -72,10 +76,12 @@ class References(HTMLParser):
 
 
 def add_error(errors: list[str], message: str) -> None:
+    """Append one deterministic validation error."""
     errors.append(message)
 
 
 def sha256(path: Path) -> str:
+    """Return the lowercase SHA-256 digest for a file."""
     digest = hashlib.sha256()
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
@@ -84,6 +90,7 @@ def sha256(path: Path) -> str:
 
 
 def read_json(path: Path, errors: list[str]) -> object | None:
+    """Read JSON while converting parse and file errors into validation errors."""
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as error:
@@ -94,6 +101,7 @@ def read_json(path: Path, errors: list[str]) -> object | None:
 def exact_keys(
     value: dict[str, object], expected: set[str], label: str, errors: list[str]
 ) -> bool:
+    """Require an object to contain exactly the expected keys."""
     actual = set(value)
     if actual == expected:
         return True
@@ -104,10 +112,12 @@ def exact_keys(
 
 
 def nonempty_string(value: object) -> bool:
+    """Return whether a value is a non-empty string after trimming."""
     return isinstance(value, str) and bool(value.strip())
 
 
 def validate_catalog_shape(catalog: object, errors: list[str]) -> bool:
+    """Validate the schema-v2 catalogue structure and entry identity fields."""
     start = len(errors)
     if not isinstance(catalog, dict):
         add_error(errors, "catalog root must be an object")
@@ -203,6 +213,7 @@ def validate_catalog_shape(catalog: object, errors: list[str]) -> bool:
 def compare_membership(
     label: str, actual: set[str], expected: set[str], errors: list[str]
 ) -> None:
+    """Record missing and extra members for a repeated catalogue surface."""
     if actual == expected:
         return
     missing = ", ".join(sorted(expected - actual)) or "none"
@@ -211,6 +222,7 @@ def compare_membership(
 
 
 def package_properties(readme: Path, errors: list[str]) -> dict[str, str]:
+    """Parse and validate the canonical Package table in a pet README."""
     lines = readme.read_text(encoding="utf-8").splitlines()
     try:
         start = lines.index(PACKAGE_HEADING) + 1
@@ -243,6 +255,7 @@ def package_properties(readme: Path, errors: list[str]) -> dict[str, str]:
 
 
 def expected_install_values(pet: dict[str, object]) -> dict[str, str]:
+    """Derive the canonical installer query values for one pet."""
     pet_id = str(pet["id"])
     return {
         "name": str(pet["displayName"]),
@@ -255,6 +268,7 @@ def expected_install_values(pet: dict[str, object]) -> dict[str, str]:
 def validate_deep_link(
     text: str, pet: dict[str, object], label: str, errors: list[str]
 ) -> None:
+    """Validate one installer deep link against canonical package metadata."""
     decoded = html.unescape(text)
     matches = re.findall(r"codex://pets/install\?[^\s\"<]+", decoded)
     if len(matches) != 1:
@@ -273,6 +287,7 @@ def validate_deep_link(
 def validate_package(
     pet: dict[str, object], errors: list[str]
 ) -> tuple[str, str]:
+    """Validate one package and return its README and site preview tokens."""
     pet_id = str(pet["id"])
     metadata_path = ROOT / "pets" / pet_id / "pet.json"
     spritesheet = ROOT / str(pet["spritesheetPath"])
@@ -379,6 +394,7 @@ def validate_package(
 def validate_root_readme(
     pets: list[dict[str, object]], package_tokens: dict[str, str], errors: list[str]
 ) -> None:
+    """Validate all catalogue-derived surfaces in the root README."""
     path = ROOT / "README.md"
     text = path.read_text(encoding="utf-8")
     count = len(pets)
@@ -407,7 +423,7 @@ def validate_root_readme(
     if hero != expected_hero:
         add_error(errors, "README hero previews differ from canonical catalogue order or metadata")
 
-    rollup_match = re.search(r"^### (.+)$", text, re.M)
+    rollup_match = re.search(r"^## (.+\(pets/.+/README\.md\).*)$", text, re.M)
     rollup = (
         re.findall(r"\[([^\]]+)\]\(pets/([^/]+)/README\.md\)", rollup_match.group(1))
         if rollup_match
@@ -483,12 +499,14 @@ def validate_root_readme(
 
 
 def text_value(value: object) -> str:
+    """Escape a catalogue value for safe HTML text comparison."""
     return html.escape(str(value), quote=False)
 
 
 def validate_site_index(
     pets: list[dict[str, object]], site_tokens: dict[str, str], errors: list[str]
 ) -> None:
+    """Validate landing-page cards against canonical catalogue presentation."""
     path = SITE_ROOT / "index.html"
     text = path.read_text(encoding="utf-8")
     count_match = re.search(r"<dt>Published pets</dt><dd>([0-9]+)</dd>", text)
@@ -539,6 +557,7 @@ def validate_site_index(
 def validate_installer(
     pet: dict[str, object], site_token: str, errors: list[str]
 ) -> None:
+    """Validate one installer page against canonical package and site truth."""
     pet_id = str(pet["id"])
     name = str(pet["displayName"])
     path = SITE_ROOT / "install" / pet_id / "index.html"
@@ -567,6 +586,7 @@ def validate_installer(
 
 
 def validate_html_references(errors: list[str]) -> int:
+    """Validate local site references and return the number inspected."""
     checked = 0
     for page in sorted(SITE_ROOT.rglob("*.html")):
         parser = References()
@@ -590,6 +610,7 @@ def validate_html_references(errors: list[str]) -> int:
 
 
 def validate_markdown_references(errors: list[str]) -> int:
+    """Validate local Markdown references and return the number inspected."""
     checked = 0
     for page in sorted(ROOT.rglob("*.md")):
         text = page.read_text(encoding="utf-8")
@@ -614,6 +635,7 @@ def validate_markdown_references(errors: list[str]) -> int:
 def validate_stable_identity(
     base_ref: str, pets: list[dict[str, object]], errors: list[str]
 ) -> None:
+    """Reject removal or renumbering of published pets relative to a base ref."""
     result = subprocess.run(
         ["git", "-C", str(ROOT), "show", f"{base_ref}:catalog.json"],
         check=False,
@@ -653,6 +675,7 @@ def validate_stable_identity(
 
 
 def main() -> int:
+    """Run the complete catalogue contract validation."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--base-ref",
