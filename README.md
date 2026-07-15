@@ -11,6 +11,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 ![Pets](https://img.shields.io/badge/pets-7-67e8f9?style=flat-square)
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
+[![Give Codex Pets a star on GitHub](https://img.shields.io/github/stars/senyo888/codex-pets?style=flat-square&logo=github&label=Give%20us%20a%20star&color=fbbf24)](https://github.com/senyo888/codex-pets)
 
 <a href="pets/bella/README.md"><img src="pets/bella/preview.gif?v=1d01e149813d" alt="Bella's dimensional idle animation" width="150"></a>
 <a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif?v=7d8ee08c4885" alt="AetherWing's calm idle animation" width="150"></a>
