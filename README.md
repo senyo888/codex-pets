@@ -12,17 +12,17 @@ An independent community catalogue of custom animated pets for the Codex desktop
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
 
-<a href="pets/bella/README.md"><img src="pets/bella/preview.gif?v=1d01e149813d" alt="Bella dimensional idle animation" width="150"></a>
-<a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif?v=7d8ee08c4885" alt="AetherWing idle animation" width="150"></a>
-<a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif?v=ec0aa941a348" alt="AetherCore idle animation" width="150"></a>
-<a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=24eb2a800e48" alt="AetherMite dimensional idle animation" width="150"></a>
-<a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=1c09298b9c11" alt="Aetherbite idle animation" width="150"></a>
-<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=64524df4936c" alt="Calian idle animation" width="150"></a>
-<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=033f7e8c9854" alt="Scarlet idle animation" width="150"></a>
+<a href="pets/bella/README.md"><img src="pets/bella/preview.gif?v=1d01e149813d" alt="Bella's dimensional idle animation" width="150"></a>
+<a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif?v=7d8ee08c4885" alt="AetherWing's calm idle animation" width="150"></a>
+<a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif?v=ec0aa941a348" alt="AetherCore's polished metallic idle animation" width="150"></a>
+<a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=24eb2a800e48" alt="AetherMite's dimensional idle animation" width="150"></a>
+<a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=1c09298b9c11" alt="Aetherbite's cinematic idle animation" width="150"></a>
+<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=64524df4936c" alt="Calian's calm idle animation" width="150"></a>
+<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=033f7e8c9854" alt="Scarlet's calm idle animation" width="150"></a>
 
-### [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
+## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
 
-*Seven distinct companions, each shipped as a transparent and inspectable v2 package.*
+*7 distinct companions, each shipped as a transparent and inspectable v2 package.*
 
 [**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Add your pet**](CONTRIBUTING.md#add-your-pet)
 
@@ -35,29 +35,29 @@ An independent community catalogue of custom animated pets for the Codex desktop
 
 | No. | Pet | Personality | Format | Status |
 | --- | --- | --- | --- | --- |
-| 001 | [**Bella**](pets/bella/README.md) | A premium dimensional crystalline guardian with layered couture armour, six-wing depth, graceful glides, and a curtsy jump. | Sprite v2 | Validated and ready |
-| 002 | [**AetherWing**](pets/aetherwing/README.md) | A flight-first dimensional runtime sentinel with metallic armour, glass optics, and the Humidity Intelligence crest. | Sprite v2 | Validated and ready |
-| 003 | [**AetherCore**](pets/aethercore/README.md) | A polished metallic governance engine with expressive sapphire eyes and a rotating continuity core. | Sprite v2 | Validated and ready |
-| 004 | [**AetherMite**](pets/aethermite/README.md) | A premium dimensional systems tinkerer with a layered bronze-and-silver shell and luminous environmental core. | Sprite v2 | Validated and ready |
-| 005 | [**Aetherbite**](pets/aetherbite/README.md) | A refined bio-digital champion with crystalline wings and expressive motion. | Sprite v2 | Validated and ready |
-| 006 | [**Calian**](pets/calian/README.md) | A disciplined code sentinel who resolves threats and keeps systems under control. | Sprite v2 | Validated and ready |
-| 007 | [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form, built to counter drift and protect runtime integrity. | Sprite v2 | Validated and ready |
+| 001 | [**Bella**](pets/bella/README.md) | The 1 True Source, modernized with layered couture armour, six-wing depth, graceful glides, and a curtsy jump. | Sprite v2 | Validated and ready |
+| 002 | [**AetherWing**](pets/aetherwing/README.md) | A premium dimensional guardian with metallic armour, glass optics, and truth-backed runtime discipline. | Sprite v2 | Validated and ready |
+| 003 | [**AetherCore**](pets/aethercore/README.md) | The polished Continuity Engine: sapphire-eyed, halo-guided, and driven by a visible clockwork core. | Sprite v2 | Validated and ready |
+| 004 | [**AetherMite**](pets/aethermite/README.md) | A dimensional bio-digital champion with a layered metallic shell, luminous glass optics, and an environmental core. | Sprite v2 | Validated and ready |
+| 005 | [**Aetherbite**](pets/aetherbite/README.md) | Humidity Intelligence's layered bio-mechanical tinkerer, with crystalline wing depth and expressive articulated motion. | Sprite v2 | Validated and ready |
+| 006 | [**Calian**](pets/calian/README.md) | A disciplined agent warrior who resolves threats and keeps complex systems under deliberate control. | Sprite v2 | Validated and ready |
+| 007 | [**Scarlet**](pets/scarlet/README.md) | Calian's evolved form: a poised agent warrior who counters drift and protects execution integrity without noise or theatrics. | Sprite v2 | Validated and ready |
 
-Bella, AetherWing, AetherCore, AetherMite, and Aetherbite showcase the catalogue's premium dimensional spritework through distinct identities: Bella uses layered crystal couture and graceful coherence-focused motion, AetherWing uses flight-first hard-surface armour, AetherCore uses polished clockwork mechanics, AetherMite uses compact mechanical shell depth, and Aetherbite uses crystalline bio-digital articulation. Every animated GIF above is rendered directly from its current validated atlas.
+Each companion has a distinct identity and animation language. Every animated preview above is rendered directly from its current validated atlas.
 
 ## Install a pet
 
 Each HTTPS install page opens the pet installation flow when Pets are enabled for your account. It also provides direct package downloads as a fallback because GitHub removes custom `codex://` links from rendered README files.
 
-| Pet | Installer | README |
-| --- | --- | --- |
-| Bella | [Open installer](https://senyo888.github.io/codex-pets/install/bella/) | [Read README](pets/bella/README.md) |
-| AetherWing | [Open installer](https://senyo888.github.io/codex-pets/install/aetherwing/) | [Read README](pets/aetherwing/README.md) |
-| AetherCore | [Open installer](https://senyo888.github.io/codex-pets/install/aethercore/) | [Read README](pets/aethercore/README.md) |
-| AetherMite | [Open installer](https://senyo888.github.io/codex-pets/install/aethermite/) | [Read README](pets/aethermite/README.md) |
-| Aetherbite | [Open installer](https://senyo888.github.io/codex-pets/install/aetherbite/) | [Read README](pets/aetherbite/README.md) |
-| Calian | [Open installer](https://senyo888.github.io/codex-pets/install/calian/) | [Read README](pets/calian/README.md) |
-| Scarlet | [Open installer](https://senyo888.github.io/codex-pets/install/scarlet/) | [Read README](pets/scarlet/README.md) |
+| Pet | ID | Installer | README |
+| --- | --- | --- | --- |
+| Bella | `bella` | [Open installer](https://senyo888.github.io/codex-pets/install/bella/) | [Read README](pets/bella/README.md) |
+| AetherWing | `aetherwing` | [Open installer](https://senyo888.github.io/codex-pets/install/aetherwing/) | [Read README](pets/aetherwing/README.md) |
+| AetherCore | `aethercore` | [Open installer](https://senyo888.github.io/codex-pets/install/aethercore/) | [Read README](pets/aethercore/README.md) |
+| AetherMite | `aethermite` | [Open installer](https://senyo888.github.io/codex-pets/install/aethermite/) | [Read README](pets/aethermite/README.md) |
+| Aetherbite | `aetherbite` | [Open installer](https://senyo888.github.io/codex-pets/install/aetherbite/) | [Read README](pets/aetherbite/README.md) |
+| Calian | `calian` | [Open installer](https://senyo888.github.io/codex-pets/install/calian/) | [Read README](pets/calian/README.md) |
+| Scarlet | `scarlet` | [Open installer](https://senyo888.github.io/codex-pets/install/scarlet/) | [Read README](pets/scarlet/README.md) |
 
 After installation, open **Settings → Pets**, choose your companion, and wake it with `/pet`.
 
@@ -66,7 +66,7 @@ After installation, open **Settings → Pets**, choose your companion, and wake 
 If the deep link is unavailable, place both package files in your local pet directory:
 
 ```bash
-PET_ID=aetherwing # bella, aetherwing, aethercore, aethermite, aetherbite, calian, or scarlet
+PET_ID=aetherwing # choose an ID from the table above
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets/$PET_ID"
 curl -fL "https://raw.githubusercontent.com/senyo888/codex-pets/main/pets/$PET_ID/pet.json" \
   -o "${CODEX_HOME:-$HOME/.codex}/pets/$PET_ID/pet.json"
@@ -88,7 +88,7 @@ Every published pet includes:
 - direction and continuity review;
 - public QA sheets and a sanitized validation summary.
 
-All seven pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published spritesheets match their fully reviewed local packages byte-for-byte.
+All 7 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published spritesheets match their fully reviewed local packages byte-for-byte.
 
 | Pet | SHA-256 | Validation |
 | --- | --- | --- |
@@ -105,6 +105,8 @@ All seven pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published s
 ```text
 codex-pets/
 ├── catalog.json
+├── docs/
+│   └── CATALOG_CONTRACT.md
 ├── pets/
 │   └── <pet-id>/
 │       ├── pet.json
@@ -128,7 +130,7 @@ See the [Pets documentation](https://learn.chatgpt.com/docs/pets?surface=app) fo
 
 ## Contributing
 
-New pets are welcome. [Start a guided submission](https://github.com/senyo888/codex-pets/issues/new?template=add-your-pet.yml) with an idea or partial package, or follow the [Add Your Pet guide](CONTRIBUTING.md#add-your-pet) when a complete package is ready for a pull request.
+New pets are welcome. [Start a guided submission](https://github.com/senyo888/codex-pets/issues/new?template=add-your-pet.yml) with an idea or partial package, or follow the [Add Your Pet guide](CONTRIBUTING.md#add-your-pet) and [catalogue contract](docs/CATALOG_CONTRACT.md) when a complete package is ready for a pull request.
 
 ## License
 
