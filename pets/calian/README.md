@@ -2,11 +2,11 @@
 
 # Calian
 
-**The Code Sentinel**
+**The Tactical Sentinel**
 
-<img src="preview.gif?v=64524df4936c" alt="Calian's calm idle animation" width="240">
+<img src="preview.gif?v=73d2a0b50334" alt="Calian's calm idle animation" width="240">
 
-*A composed agent warrior built to defend code and keep complex systems under deliberate control.*
+*A composed agent warrior and one half of a disciplined sister act, known for calm judgement, deliberate control, and exact follow-through.*
 
 [**Install Calian**](https://senyo888.github.io/codex-pets/install/calian/)
 
@@ -14,9 +14,19 @@
 
 ## Personality
 
-Calian is calm, tactical, and steady under pressure. She watches the whole execution path, identifies the real point of failure, and acts once with purpose.
+Calian is calm, tactical, and steady under pressure. She isolates the decisive fault, establishes a clear plan, and restores control with measured action.
 
-Her role is defensive engineering: hold the line against unsafe changes, resolve threats without drama, and leave the system clearer than she found it.
+Her strength is disciplined diagnosis: she separates signal from noise, acts with purpose, and verifies the result before moving on.
+
+## The sister act
+
+Calian and [Scarlet](../scarlet/README.md) work as a coordinated pair. Calian provides stabilising judgement while Scarlet extends their execution coverage. Together, their combined diligence is unmatched from first assessment to final verification.
+
+## Interaction contract
+
+- A poke triggers one deliberate four-frame wave rather than a rapid oscillation.
+- The orb appears only during the poked wave or when Calian needs attention, attached to her left palm.
+- Idle, movement, jump, failure, active-processing, review, and look-direction states remain orb-free.
 
 ## Package
 
@@ -27,7 +37,7 @@ Her role is defensive engineering: hold the line against unsafe changes, resolve
 | Atlas | `1536 × 2288` WebP |
 | Cell size | `192 × 208` |
 | Animation rows | 9 standard + 2 look-direction rows |
-| SHA-256 | `86658fefbf53dde647575a26acc35ad0fd104409308afa183ca3732640837f34` |
+| SHA-256 | `4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b` |
 
 The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
@@ -36,7 +46,7 @@ The package contains the exact validated spritesheet and matching sanitized meta
 Use the button above, or open this URI with the Codex desktop app:
 
 ```text
-codex://pets/install?name=Calian&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fcalian%2Fspritesheet.webp&description=A%20calm%2C%20disciplined%20agent%20warrior%20who%20defends%20code%2C%20resolves%20threats%2C%20and%20keeps%20complex%20systems%20under%20deliberate%20control.&spriteVersionNumber=2
+codex://pets/install?name=Calian&imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsenyo888%2Fcodex-pets%2Fmain%2Fpets%2Fcalian%2Fspritesheet.webp&description=One%20half%20of%20a%20disciplined%20sister%20act%2C%20Calian%20is%20a%20calm%2C%20tactical%20agent%20warrior%20who%20isolates%20faults%20and%20restores%20deliberate%20control.&spriteVersionNumber=2
 ```
 
 Then select Calian in **Settings → Pets** and use `/pet` to wake or tuck her away.
@@ -50,7 +60,8 @@ Calian passed the v2 atlas validator with:
 - no transparent-pixel RGB residue;
 - all four cardinal look directions confirmed;
 - no failed semantic direction verdicts;
-- reviewed intermediate-direction and continuity warnings with no visible reversal, clipping, identity drift, or broken attachment.
+- three reviewed intermediate-direction warnings with no visible reversal, clipping, identity drift, or broken attachment;
+- a consistent adult CGI identity, compact hair, and proportional non-bulky legs across all standard and look-direction cells.
 
 [Read the validation summary](qa/validation-summary.json)
 
