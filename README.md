@@ -18,7 +18,7 @@ An independent community catalogue of custom animated pets for the Codex desktop
 <a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=24eb2a800e48" alt="AetherMite's dimensional idle animation" width="150"></a>
 <a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=1c09298b9c11" alt="Aetherbite's cinematic idle animation" width="150"></a>
 <a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=73d2a0b50334" alt="Calian's calm idle animation" width="150"></a>
-<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=cd81da15d103" alt="Scarlet's calm idle animation" width="150"></a>
+<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=49db273a1e1a" alt="Scarlet's calm idle animation" width="150"></a>
 
 ## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
 

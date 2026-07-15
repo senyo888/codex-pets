@@ -4,7 +4,7 @@
 
 **The Propulsive Execution Guardian**
 
-<img src="preview.gif?v=cd81da15d103" alt="Scarlet's calm idle animation" width="240">
+<img src="preview.gif?v=49db273a1e1a" alt="Scarlet's calm idle animation" width="240">
 
 *A poised CGI guardian and one half of a sister act of unmatched diligence, built to trace drift and carry every correction to verified closure.*
 
