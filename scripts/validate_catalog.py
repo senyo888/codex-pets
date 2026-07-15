@@ -270,7 +270,7 @@ def validate_deep_link(
 ) -> None:
     """Validate one installer deep link against canonical package metadata."""
     decoded = html.unescape(text)
-    matches = re.findall(r"codex://pets/install\?[^\s\"<]+", decoded)
+    matches = re.findall(r"codex://pets/install\?[^\s\"<'\])]+", decoded)
     if len(matches) != 1:
         add_error(errors, f"{label} must contain exactly one codex installer link")
         return
