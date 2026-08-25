@@ -39,7 +39,7 @@ Calian and [Scarlet](../scarlet/README.md) work as a coordinated pair. Calian is
 | Animation rows | 9 standard + 2 look-direction rows |
 | SHA-256 | `4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b` |
 
-The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 

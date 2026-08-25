@@ -40,7 +40,7 @@ The remaining standard states retain Bella's established movement language, and 
 | Animation rows | 9 standard + 2 look-direction rows |
 | SHA-256 | `548cb72d381fcc861f5017f0213c3d794ce2210d4b9781a58ee53331aa43344d` |
 
-The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 

@@ -29,7 +29,7 @@ Its evolved ivory-and-champagne shell now carries a richer brushed-metal finish,
 | Animation rows | 9 standard + 2 look-direction rows |
 | SHA-256 | `5ad38c56af287375f32e3706f119720a6c9122e8b5490a7fd7d6e07b05fc44dd` |
 
-The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 
