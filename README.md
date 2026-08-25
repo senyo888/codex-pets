@@ -6,7 +6,7 @@
 
 **Small companions. Serious sprites.**
 
-An independent community catalogue of custom animated pets for the Codex desktop app, packaged with one-click install links and reviewable validation evidence.
+An independent community catalogue of custom animated pets for the Codex desktop app, with guided installer pages and validation evidence you can review.
 
 ![Pets](https://img.shields.io/badge/pets-7-67e8f9?style=flat-square)
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
@@ -52,7 +52,7 @@ Calian and Scarlet form a sister act of unmatched diligence: Calian isolates dec
 
 ## Install a pet
 
-Each HTTPS install page opens the pet installation flow when Pets are enabled for your account. It also provides direct package downloads as a fallback because GitHub removes custom `codex://` links from rendered README files.
+Each HTTPS installer page offers an **Open in Codex** handoff and direct package downloads. Your browser may ask for permission to open the desktop app; if the handoff is unavailable, the package links remain available. GitHub removes custom `codex://` links from rendered README files.
 
 | Pet | ID | Installer | README |
 | --- | --- | --- | --- |
@@ -93,7 +93,7 @@ Every published pet includes:
 - direction and continuity review;
 - public QA sheets and a sanitized validation summary.
 
-All 7 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Their published spritesheets match their fully reviewed local packages byte-for-byte.
+All 7 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Each published spritesheet's SHA-256 matches `catalog.json` and its linked validation summary.
 
 | Pet | SHA-256 | Validation |
 | --- | --- | --- |

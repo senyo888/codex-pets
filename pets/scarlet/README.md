@@ -40,7 +40,7 @@ Her premium CGI identity combines a readable sculpted face, short flame-crown ha
 | Animation rows | 9 standard + 2 look-direction rows |
 | SHA-256 | `f94405dc13396f703b600f4462342d5928ec7716461c86ad96551fec63b54840` |
 
-The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 

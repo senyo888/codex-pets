@@ -35,7 +35,7 @@ The animation set uses deliberate perspective shifts, grounded contact shadows, 
 | Animation rows | 9 standard + 2 look-direction rows |
 | SHA-256 | `13869434db6f58f07c0d2571def9d8da624bc77416adc4964727084d23840384` |
 
-The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 

@@ -35,7 +35,7 @@ Four modern articulated wings make flight her chosen form of movement. Direction
 | Animation rows | 9 standard + 2 look-direction rows |
 | SHA-256 | `c5b03756e270516b8200b75cef811e094f768638633273eadc3ce0c6fa5002fa` |
 
-The package contains the exact validated spritesheet and matching sanitized metadata. No rescaling, recompression, or post-validation sprite editing was applied before publication.
+The package contains the exact validated spritesheet and its matching `pet.json`. No rescaling, recompression, or post-validation sprite editing was applied before publication.
 
 ## Install
 

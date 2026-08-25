@@ -209,7 +209,7 @@ differ after documented presentation-only cleanup.
 - Look directions preserve identity and pass the four cardinal gates: up, screen-right, down, and screen-left.
 - Deterministic validation reports no errors.
 - The preview and QA images were produced from the exact submitted atlas.
-- `catalog.json`, every affected root README block, and the one-click install link are updated in the same pull request.
+- `catalog.json`, every affected root README block, and the installer deep link are updated in the same pull request.
 - Maintainer-initiated site content, installer copy, previews, alt text, and cache tokens agree before merge.
 
 Do not submit an unreviewed generated atlas, a flattened image without transparency, or a package whose metadata and spritesheet disagree.
