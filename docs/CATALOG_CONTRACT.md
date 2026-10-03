@@ -36,7 +36,7 @@ sorted by immutable `catalogueNumber`. Published numbers are never reused or cha
 | Installer page | `catalog.json.installPage` | Root and per-pet README links |
 | Deep link | Derived from package identity, description, version, and raw spritesheet URL | Per-pet README and installer page |
 | Checksum | Computed from the authoritative spritesheet | Catalogue pin, QA evidence, and README tables |
-| Validation status | QA core reconciled by the validator | Derived `Validated vN` presentation |
+| Validation status | QA core reconciled by the validator | `Validated vN`, or `Reviewed vN` for the exact documented Áureo exception |
 
 Long-form personality, design, movement, and attribution prose remains manually
 maintained in each per-pet README. It must stay truthful but is not generated from the
@@ -149,3 +149,17 @@ PNG cache tokens follow the same exact-file SHA-256 rule as GIF tokens.
 `python3 scripts/validate_previews.py` checks timing, geometry, transparency, disposal,
 looping, and still-frame equality using the pinned development dependency. The standard
 library catalogue validator checks source markup, tokens, and local PNG references.
+
+## Exact-asset maintainer exception
+
+[Áureo 008](VALIDATION_EXCEPTIONS.md#aureo-008) is the sole current exception. Its
+strict `ok: false`, eight chroma cell errors, eleven edge pixels and failed left
+cardinal remain in public QA. Separate structural checks pass. The validator pins
+the pet ID, atlas and independent evidence digests, requires the explicit exception
+record, and enforces "Reviewed with limitations" / "Reviewed v2" presentation with
+the directional limitation disclosed. A normal catalogue pass means these facts
+agree; it does not turn strict failures into passes. Other pets keep the existing
+zero-error expectations. Missing/corrupt files and mismatched metadata remain errors.
+
+Run `python3 scripts/test_validation_exceptions.py` to verify exception scope and
+that altered findings or missing/corrupt assets still fail.

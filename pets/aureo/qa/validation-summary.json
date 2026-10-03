@@ -1,0 +1,66 @@
+{
+  "ok": false,
+  "petId": "aureo",
+  "displayName": "Áureo",
+  "validatedAt": "2026-10-03",
+  "spriteVersionNumber": 2,
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1536,
+  "height": 2288,
+  "columns": 8,
+  "rows": 11,
+  "sha256": "614dabf05306723f15415b2ae7ecae47ba4e9437ffd5083a437303f763e67098",
+  "atlasValidation": {
+    "ok": false,
+    "errors": 8,
+    "warnings": 0,
+    "transparentRgbResiduePixels": 0,
+    "chromaFringePixels": 11,
+    "detail": "atlas-validation.json",
+    "note": "Geometry, alpha and occupied/unused cells pass. Strict chroma checks flag 11 partially transparent green edge pixels across eight cells; visible impact at native size has not been established."
+  },
+  "directionValidation": {
+    "blindValidationOk": false,
+    "blindValidationPerformed": false,
+    "cardinalGatesPassed": 3,
+    "cardinalGates": {
+      "up": "pass",
+      "screenRight": "pass",
+      "down": "pass",
+      "screenLeft": "fail"
+    },
+    "reviewNote": "Under the fixed desktop v2 mapping, 270 degrees selects zero-based row 10, column 4, whose artwork faces screen-right. Several other left-sector poses also face right. The original atlas is retained; sixteen populated cells do not constitute sixteen verified gaze directions."
+  },
+  "maintainerReview": {
+    "designAccepted": true,
+    "artworkPreserved": true,
+    "jumpScale": "Preserved as submitted choreography; smaller jump poses are not treated as a required correction.",
+    "emblem": "Preserved as part of the submitted character design. No official affiliation is claimed."
+  },
+  "source": {
+    "issue": "https://github.com/senyo888/codex-pets/issues/24",
+    "contributor": "0MartinSmith0",
+    "archiveSha256": "d560e6b9e1a48e77c5b88c6f172cc21219c6a98f9cfb0103c026c8c671486aca",
+    "rightsAffirmation": "Contributor affirmed authority to contribute the submitted assets under CC BY 4.0.",
+    "qaSheetsMatchAtlasPixels": true
+  },
+  "nativeRuntimeVerified": false,
+  "structuralValidation": {
+    "ok": true,
+    "usedCells": 74,
+    "unusedCells": 14,
+    "transparentRgbResiduePixels": 0
+  },
+  "maintainerException": {
+    "id": "aureo-original-2026-10-03",
+    "petId": "aureo",
+    "atlasSha256": "614dabf05306723f15415b2ae7ecae47ba4e9437ffd5083a437303f763e67098",
+    "decision": "accepted-with-known-limitations",
+    "scope": [
+      "chroma-edge-residue",
+      "left-look-direction"
+    ],
+    "record": "docs/VALIDATION_EXCEPTIONS.md#aureo-008"
+  }
+}

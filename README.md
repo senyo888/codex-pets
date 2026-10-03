@@ -8,7 +8,7 @@
 
 An independent community catalogue of custom animated pets for the Codex desktop app, with guided installer pages and validation evidence you can review.
 
-![Pets](https://img.shields.io/badge/pets-7-67e8f9?style=flat-square)
+![Pets](https://img.shields.io/badge/pets-8-67e8f9?style=flat-square)
 ![Sprite format](https://img.shields.io/badge/sprite%20format-v2-a78bfa?style=flat-square)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
 [![Give Codex Pets a star on GitHub](https://img.shields.io/github/stars/senyo888/codex-pets?style=flat-square&logo=github&label=Give%20us%20a%20star&color=fbbf24)](https://github.com/senyo888/codex-pets)
@@ -20,10 +20,11 @@ An independent community catalogue of custom animated pets for the Codex desktop
 <a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=a3774afdaa8a" alt="Aetherbite's cinematic idle animation" width="150"></a>
 <a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=422116aef0a3" alt="Calian's calm idle animation" width="150"></a>
 <a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=f88c094046c2" alt="Scarlet's calm idle animation" width="150"></a>
+<a href="pets/aureo/README.md"><img src="pets/aureo/preview.gif?v=f2f2b04af2dd" alt="Áureo's golden dragon idle animation" width="150"></a>
 
-## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
+## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md) · [Áureo](pets/aureo/README.md)
 
-*7 distinct companions, each shipped as a transparent and inspectable v2 package.*
+*8 distinct companions, each shipped as a transparent and inspectable v2 package.*
 
 [**Browse the catalogue**](https://senyo888.github.io/codex-pets/) · [**Add your pet**](CONTRIBUTING.md#add-your-pet)
 
@@ -43,8 +44,9 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | 005 | [**Aetherbite**](pets/aetherbite/README.md) | Humidity Intelligence's layered bio-mechanical tinkerer, with crystalline wing depth and expressive articulated motion. | Sprite v2 | Validated and ready |
 | 006 | [**Calian**](pets/calian/README.md) | Calian isolates decisive faults and restores deliberate control with calm, methodical judgement. | Sprite v2 | Validated and ready |
 | 007 | [**Scarlet**](pets/scarlet/README.md) | Scarlet pairs vigilant drift tracing with propulsive follow-through, carrying every correction to verified closure beside Calian. | Sprite v2 | Validated and ready |
+| 008 | [**Áureo**](pets/aureo/README.md) | A warm, attentive golden dragon with a dark leather harness, an amber chest gem, and a loyal, watchful personality. | Sprite v2 | Reviewed with limitations |
 
-Each companion has a distinct identity and animation language. Every animated preview above is derived from its current validated atlas and uses a
+Each companion has a distinct identity and animation language. Every animated preview above is derived from its packaged atlas and uses a
 6.6-second idle loop, matching the desktop renderer checked in version 26.930.21537.
 The website displays still images when reduced motion is requested; each pet README
 also links to a static preview.
@@ -67,6 +69,7 @@ Each HTTPS installer page offers an **Open in Codex** handoff and direct package
 | Aetherbite | `aetherbite` | [Open installer](https://senyo888.github.io/codex-pets/install/aetherbite/) | [Read README](pets/aetherbite/README.md) |
 | Calian | `calian` | [Open installer](https://senyo888.github.io/codex-pets/install/calian/) | [Read README](pets/calian/README.md) |
 | Scarlet | `scarlet` | [Open installer](https://senyo888.github.io/codex-pets/install/scarlet/) | [Read README](pets/scarlet/README.md) |
+| Áureo | `aureo` | [Open installer](https://senyo888.github.io/codex-pets/install/aureo/) | [Read README](pets/aureo/README.md) |
 
 After installation, open **Settings → Pets**, choose your companion, and wake it with `/pet`.
 
@@ -92,12 +95,16 @@ Every published pet includes:
 - a transparent, structurally valid v2 sprite atlas;
 - matching metadata with an explicit sprite version;
 - a human-readable animated preview;
-- deterministic validation with no structural errors;
+- deterministic validation results, with any known limitations disclosed;
 - visual review of all standard animation states;
 - direction and continuity review;
 - public QA sheets and a sanitized validation summary.
 
-All 7 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Each published spritesheet's SHA-256 matches `catalog.json` and its linked validation summary.
+All 8 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Each published spritesheet's SHA-256 matches `catalog.json` and its linked validation summary.
+
+Áureo retains the submitted artwork and is reviewed with limitations: some leftward
+looks face right, and strict chroma validation reports small edge residues. See
+[Áureo’s review notes](pets/aureo/README.md#validation) for the measured results.
 
 | Pet | SHA-256 | Validation |
 | --- | --- | --- |
@@ -108,6 +115,7 @@ All 7 published pets ship as exact `1536 × 2288` RGBA WebP atlases. Each publis
 | Aetherbite | `18ce2adf6e4b30c42b1943cd32398757014d26c729b7f3a63e4d969abed40346` | [Summary](pets/aetherbite/qa/validation-summary.json) |
 | Calian | `4b9ac6125a4222a5e2391ba04ee3bf0a0b6c2fcd98aa07c8f2b2322dd614933b` | [Summary](pets/calian/qa/validation-summary.json) |
 | Scarlet | `f94405dc13396f703b600f4462342d5928ec7716461c86ad96551fec63b54840` | [Summary](pets/scarlet/qa/validation-summary.json) |
+| Áureo | `614dabf05306723f15415b2ae7ecae47ba4e9437ffd5083a437303f763e67098` | [Summary](pets/aureo/qa/validation-summary.json) |
 
 ## Repository layout
 
@@ -146,4 +154,7 @@ New pets are welcome. [Start a guided submission](https://github.com/senyo888/co
 
 The pet artwork, animations, previews, and repository documentation are available under the [Creative Commons Attribution 4.0 International License](LICENSE).
 
-Credit: **Senyo** · Source: `senyo888/codex-pets`
+Collection maintained by **Senyo** · Source: `senyo888/codex-pets`
+
+Áureo artwork and animation: [@0MartinSmith0](https://github.com/0MartinSmith0).
+See each pet’s README for its attribution and source.

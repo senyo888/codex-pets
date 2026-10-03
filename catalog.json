@@ -126,6 +126,24 @@
         "traits": ["Poised", "Vigilant", "Diligent"],
         "previewAlt": "Scarlet's calm idle animation"
       }
+    },
+    {
+      "catalogueNumber": "008",
+      "publicationState": "published",
+      "id": "aureo",
+      "displayName": "Áureo",
+      "description": "Dragón dorado con arnés de cuero y gema pectoral con el símbolo de OpenAI.",
+      "spriteVersionNumber": 2,
+      "spritesheetPath": "pets/aureo/spritesheet.webp",
+      "previewPath": "pets/aureo/preview.gif",
+      "installPage": "https://senyo888.github.io/codex-pets/install/aureo/",
+      "sha256": "614dabf05306723f15415b2ae7ecae47ba4e9437ffd5083a437303f763e67098",
+      "presentation": {
+        "shortRole": "Golden quest companion",
+        "summary": "A warm, attentive golden dragon with a dark leather harness, an amber chest gem, and a loyal, watchful personality.",
+        "traits": ["Loyal", "Watchful", "Curious"],
+        "previewAlt": "Áureo's golden dragon idle animation"
+      }
     }
   ]
 }

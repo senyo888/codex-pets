@@ -215,6 +215,10 @@ differ after documented presentation-only cleanup.
 - Standard rows have the correct state semantics and contain no detached effects, shadows, guide marks, or opaque backgrounds.
 - Look directions preserve identity and pass the four cardinal gates: up, screen-right, down, and screen-left.
 - Deterministic validation reports no errors.
+- A narrowly recorded maintainer exception may retain specified findings for an exact
+  pet and atlas hash; this is not a contributor-set bypass. The only current exception
+  is [Áureo’s original atlas](docs/VALIDATION_EXCEPTIONS.md#aureo-008). All other
+  packages retain the default acceptance bar above.
 - The preview and QA images were produced from the exact submitted atlas.
 - `catalog.json`, every affected root README block, and the installer deep link are updated in the same pull request.
 - Maintainer-initiated site content, installer copy, previews, alt text, and cache tokens agree before merge.

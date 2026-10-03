@@ -22,6 +22,18 @@ CATALOG_SCHEMA_VERSION = 2
 ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 NUMBER_PATTERN = re.compile(r"^[0-9]{3,}$")
 SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
+# One reviewed asset, not a general opt-out from strict validation.
+# See docs/VALIDATION_EXCEPTIONS.md; changing the artwork requires fresh review.
+AUREO_ATLAS_SHA256 = "614dabf05306723f15415b2ae7ecae47ba4e9437ffd5083a437303f763e67098"
+AUREO_EVIDENCE_SHA256 = "5be4d2822e06def461a34b1edfb88cca79360d7c772cb260df4a9abcbe76385d"
+AUREO_EXCEPTION = {
+    "id": "aureo-original-2026-10-03",
+    "petId": "aureo",
+    "atlasSha256": AUREO_ATLAS_SHA256,
+    "decision": "accepted-with-known-limitations",
+    "scope": ["chroma-edge-residue", "left-look-direction"],
+    "record": "docs/VALIDATION_EXCEPTIONS.md#aureo-008",
+}
 PACKAGE_HEADING = "## Package"
 PACKAGE_PROPERTY_ORDER = (
     "Pet id",
@@ -284,6 +296,67 @@ def validate_deep_link(
         add_error(errors, f"{label} installer query does not match canonical package metadata")
 
 
+def has_reviewed_exception(pet: dict[str, object]) -> bool:
+    """Recognize only the maintainer-reviewed Áureo ID and exact atlas digest."""
+    return (
+        pet.get("id") == "aureo"
+        and pet.get("catalogueNumber") == "008"
+        and pet.get("spriteVersionNumber") == 2
+        and pet.get("sha256") == AUREO_ATLAS_SHA256
+    )
+
+
+def validate_maintainer_exception(
+    pet: dict[str, object], summary: dict[str, object], actual_hash: str, errors: list[str]
+) -> None:
+    """Keep the single exception bound to unchanged evidence and explicit failures."""
+    marker = summary.get("maintainerException")
+    if not has_reviewed_exception(pet):
+        if marker is not None:
+            add_error(errors, f"unrecognized maintainer exception: {pet['id']}")
+        return
+    if actual_hash != AUREO_ATLAS_SHA256 or marker != AUREO_EXCEPTION:
+        add_error(errors, "Áureo exception identity or atlas pin mismatch")
+
+    evidence = ROOT / "pets/aureo/qa/atlas-validation.json"
+    if not evidence.is_file() or sha256(evidence) != AUREO_EVIDENCE_SHA256:
+        add_error(errors, "Áureo strict atlas evidence is missing or changed")
+    if not (ROOT / "docs/VALIDATION_EXCEPTIONS.md").is_file():
+        add_error(errors, "Áureo maintainer exception record is missing")
+
+    structural = {
+        "ok": True,
+        "usedCells": 74,
+        "unusedCells": 14,
+        "transparentRgbResiduePixels": 0,
+    }
+    if summary.get("structuralValidation") != structural:
+        add_error(errors, "Áureo structural findings mismatch")
+    atlas = summary.get("atlasValidation", {})
+    if not isinstance(atlas, dict) or any(
+        atlas.get(key) != value
+        for key, value in {
+            "chromaFringePixels": 11,
+            "transparentRgbResiduePixels": 0,
+            "detail": "atlas-validation.json",
+        }.items()
+    ):
+        add_error(errors, "Áureo chroma findings mismatch")
+    direction = summary.get("directionValidation", {})
+    expected_direction = {
+        "blindValidationOk": False,
+        "blindValidationPerformed": False,
+        "cardinalGatesPassed": 3,
+        "cardinalGates": {
+            "up": "pass", "screenRight": "pass", "down": "pass", "screenLeft": "fail"
+        },
+    }
+    if not isinstance(direction, dict) or any(
+        direction.get(key) != value for key, value in expected_direction.items()
+    ):
+        add_error(errors, "Áureo direction findings mismatch")
+
+
 def validate_package(
     pet: dict[str, object], errors: list[str]
 ) -> tuple[str, str]:
@@ -336,6 +409,8 @@ def validate_package(
         }
         if metadata != expected_metadata:
             add_error(errors, f"package metadata mismatch: {pet_id}")
+    else:
+        add_error(errors, f"package metadata must be an object: {pet_id}")
 
     actual_hash = sha256(spritesheet)
     if actual_hash != pet["sha256"]:
@@ -343,8 +418,10 @@ def validate_package(
 
     summary = read_json(validation, errors)
     if isinstance(summary, dict):
+        reviewed_exception = has_reviewed_exception(pet)
+        validate_maintainer_exception(pet, summary, actual_hash, errors)
         expected_core = {
-            "ok": True,
+            "ok": not reviewed_exception,
             "petId": pet_id,
             "spriteVersionNumber": pet["spriteVersionNumber"],
             "format": "WEBP",
@@ -363,10 +440,19 @@ def validate_package(
             add_error(errors, f"validation summary atlasValidation missing: {pet_id}")
         else:
             for key, expected in (("ok", True), ("errors", 0), ("warnings", 0)):
+                if reviewed_exception and key in {"ok", "errors"}:
+                    expected = False if key == "ok" else 8
                 if atlas.get(key) != expected:
                     add_error(errors, f"validation summary atlasValidation.{key} mismatch: {pet_id}")
+    else:
+        add_error(errors, f"validation summary must be an object: {pet_id}")
 
     readme_text = readme.read_text(encoding="utf-8")
+    if has_reviewed_exception(pet):
+        if "Reviewed with known limitations." not in readme_text or (
+            "../../docs/VALIDATION_EXCEPTIONS.md#aureo-008" not in readme_text
+        ):
+            add_error(errors, "Áureo README must disclose and link the maintainer exception")
     properties = package_properties(readme, errors)
     expected_properties = {
         "Pet id": f"`{pet_id}`",
@@ -445,7 +531,7 @@ def validate_root_readme(
     collection_rows = re.findall(
         (
             r"^\| ([0-9]{3,}) \| \[\*\*(.+?)\*\*\]\(pets/([^/]+)/README\.md\) "
-            r"\| (.*?) \| Sprite v([0-9]+) \| Validated and ready \|$"
+            r"\| (.*?) \| Sprite v([0-9]+) \| ([^|]+) \|$"
         ),
         text,
         re.M,
@@ -457,6 +543,7 @@ def validate_root_readme(
             str(pet["id"]),
             str(pet["presentation"]["summary"]),
             str(pet["spriteVersionNumber"]),
+            "Reviewed with limitations" if has_reviewed_exception(pet) else "Validated and ready",
         )
         for pet in pets
     ]
@@ -541,7 +628,7 @@ def validate_site_index(
             f'<p class="pet-number">Pet {pet["catalogueNumber"]}</p>',
             f'id="{pet_id}-title"',
             f'>{text_value(pet["displayName"])}</a></h2>',
-            f'Validated v{pet["spriteVersionNumber"]}',
+            f'{"Reviewed" if has_reviewed_exception(pet) else "Validated"} v{pet["spriteVersionNumber"]}',
             f'<p class="pet-role">{text_value(presentation["shortRole"])}</p>',
             f'<p class="pet-description">{text_value(presentation["summary"])}</p>',
             f'href="./install/{pet_id}/">Install {text_value(pet["displayName"])}</a>',
@@ -549,6 +636,10 @@ def validate_site_index(
         for snippet in required_snippets:
             if snippet not in block:
                 add_error(errors, f"site card contract mismatch for {pet_id}: missing {snippet}")
+        if has_reviewed_exception(pet) and (
+            "Some leftward looks face right." not in block or "Validated v2" in block
+        ):
+            add_error(errors, "Áureo card must disclose the limitation without a strict-pass badge")
         traits_match = re.search(r'<ul class="pet-traits"[^>]*>([\s\S]*?)</ul>', block)
         traits = re.findall(r"<li>(.*?)</li>", traits_match.group(1)) if traits_match else []
         if traits != [text_value(trait) for trait in presentation["traits"]]:
@@ -593,6 +684,11 @@ def validate_installer(
         if snippet not in text:
             add_error(errors, f"installer contract mismatch for {pet_id}: missing {snippet}")
     validate_deep_link(text, pet, f"site/install/{pet_id}/index.html", errors)
+    if has_reviewed_exception(pet) and (
+        "Some leftward looks face right" not in text
+        or f'href="{readme_url}#validation"' not in text
+    ):
+        add_error(errors, "Áureo installer must link and disclose its known limitation")
 
 
 def validate_html_references(errors: list[str]) -> int:
@@ -766,6 +862,8 @@ def main() -> int:
         f"catalog contract: {len(typed_pets)} published pets, canonical README/site/installers, "
         f"{html_checked} local site references, {markdown_checked} local Markdown references, all passed"
     )
+    if any(has_reviewed_exception(pet) for pet in typed_pets):
+        print("maintainer exception: Áureo exact atlas; strict chroma errors=8, left cardinal=fail retained")
     return 0
 
 
