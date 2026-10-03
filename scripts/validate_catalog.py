@@ -68,9 +68,9 @@ class References(HTMLParser):
         self.values: list[str] = []
 
     def handle_starttag(self, _tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        """Record href and src values from an HTML start tag."""
+        """Record href, src, and single-candidate srcset values from an HTML start tag."""
         values = dict(attrs)
-        for key in ("href", "src"):
+        for key in ("href", "src", "srcset"):
             if values.get(key):
                 self.values.append(values[key] or "")
 
@@ -300,11 +300,13 @@ def validate_package(
         metadata_path,
         spritesheet,
         preview,
+        preview.with_suffix(".png"),
         readme,
         validation,
         ROOT / "pets" / pet_id / "qa" / "contact-sheet.png",
         ROOT / "pets" / pet_id / "qa" / "look-directions.png",
         site_preview,
+        site_preview.with_suffix(".png"),
         installer,
     )
     for path in required_paths:
@@ -503,6 +505,12 @@ def text_value(value: object) -> str:
     return html.escape(str(value), quote=False)
 
 
+def still_token(pet_id: str) -> str:
+    """Missing stills are reported by package validation, without a hash traceback."""
+    path = SITE_ROOT / "assets" / f"{pet_id}-preview.png"
+    return sha256(path)[:12] if path.is_file() else ""
+
+
 def validate_site_index(
     pets: list[dict[str, object]], site_tokens: dict[str, str], errors: list[str]
 ) -> None:
@@ -528,6 +536,7 @@ def validate_site_index(
         presentation = pet["presentation"]
         token = site_tokens[pet_id]
         required_snippets = (
+            f'<source media="(prefers-reduced-motion: reduce)" srcset="./assets/{pet_id}-preview.png?v={still_token(pet_id)}">',
             f'src="./assets/{pet_id}-preview.gif?v={token}" alt="{presentation["previewAlt"]}"',
             f'<p class="pet-number">Pet {pet["catalogueNumber"]}</p>',
             f'id="{pet_id}-title"',
@@ -564,6 +573,7 @@ def validate_installer(
     text = path.read_text(encoding="utf-8")
     readme_url = f"https://github.com/senyo888/codex-pets/blob/main/pets/{pet_id}/README.md"
     required_snippets = (
+        f'<source media="(prefers-reduced-motion: reduce)" srcset="../../assets/{pet_id}-preview.png?v={still_token(pet_id)}">',
         (
             f'<meta name="description" content="Install {name}, a custom animated '
             f'v{pet["spriteVersionNumber"]} pet for the Codex desktop app.">'

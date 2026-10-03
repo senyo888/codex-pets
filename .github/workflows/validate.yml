@@ -25,5 +25,11 @@ jobs:
       - name: Validate canonical catalogue surfaces
         run: python3 scripts/validate_catalog.py --base-ref "${{ github.event.pull_request.base.sha }}"
 
+      - name: Install preview validation dependency
+        run: python3 -m pip install -r requirements-dev.txt
+
+      - name: Validate preview timing and still alternatives
+        run: python3 scripts/validate_previews.py
+
       - name: Check patch whitespace
         run: git diff --check "${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"

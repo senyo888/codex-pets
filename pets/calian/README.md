@@ -4,13 +4,15 @@
 
 **The Tactical Sentinel**
 
-<img src="preview.gif?v=73d2a0b50334" alt="Calian's calm idle animation" width="240">
+<img src="preview.gif?v=422116aef0a3" alt="Calian's calm idle animation" width="240">
 
 *A composed tactical guardian and one half of a sister act of unmatched diligence, known for calm judgement, deliberate control, and exact follow-through.*
 
 [**Install Calian**](https://senyo888.github.io/codex-pets/install/calian/)
 
 </div>
+
+[View the static idle preview](preview.png)
 
 ## Personality
 

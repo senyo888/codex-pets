@@ -4,13 +4,15 @@
 
 **The Continuity Engine**
 
-<img src="preview.gif?v=ec0aa941a348" alt="AetherCore's polished metallic idle animation" width="240">
+<img src="preview.gif?v=ea06dabe0655" alt="AetherCore's polished metallic idle animation" width="240">
 
 *A calm clockwork guardian built to keep decisions connected, drift visible, and governance coherent.*
 
 [**Install AetherCore**](https://senyo888.github.io/codex-pets/install/aethercore/)
 
 </div>
+
+[View the static idle preview](preview.png)
 
 ## Personality
 

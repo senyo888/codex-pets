@@ -347,6 +347,11 @@ h1 {
   filter: drop-shadow(0 18px 26px rgba(var(--accent-rgb), 0.2));
 }
 
+.pet-visual picture,
+.installer-visual picture {
+  display: contents;
+}
+
 .contribution-visual img {
   width: min(154px, 70%);
 }
