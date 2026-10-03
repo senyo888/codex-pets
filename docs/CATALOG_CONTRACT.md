@@ -136,3 +136,16 @@ output, external availability, or real desktop-app installer behaviour.
 - A successful Pages deployment and live readback are required before publication is
   declared complete.
 - No validator, agent, workflow, or generated output may approve its own work.
+
+## Preview playback and accessibility
+
+Package and site idle GIFs use six frames with durations of 1680, 660, 660, 840,
+840, and 1920 ms (6.6 seconds total), matching the desktop renderer inspected in
+26.930.21537. This is a dated presentation baseline, not a package timing override.
+Each GIF has a same-stem static PNG equal to its first decoded frame. Website cards
+and installers select that PNG through a reduced-motion `<picture>` source.
+PNG cache tokens follow the same exact-file SHA-256 rule as GIF tokens.
+
+`python3 scripts/validate_previews.py` checks timing, geometry, transparency, disposal,
+looping, and still-frame equality using the pinned development dependency. The standard
+library catalogue validator checks source markup, tokens, and local PNG references.

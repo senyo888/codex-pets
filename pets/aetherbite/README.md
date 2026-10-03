@@ -4,13 +4,15 @@
 
 **The Bio-Digital Systems Tinkerer**
 
-<img src="preview.gif?v=1c09298b9c11" alt="Aetherbite's cinematic idle animation" width="240">
+<img src="preview.gif?v=a3774afdaa8a" alt="Aetherbite's cinematic idle animation" width="240">
 
 *Humidity Intelligence's cinematic dimensional systems tinkerer, with crystalline wings, layered articulated armour, and expressive motion.*
 
 [**Install Aetherbite**](https://senyo888.github.io/codex-pets/install/aetherbite/)
 
 </div>
+
+[View the static idle preview](preview.png)
 
 ## Personality
 

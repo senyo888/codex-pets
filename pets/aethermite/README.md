@@ -4,13 +4,15 @@
 
 **The Systems Tinkerer**
 
-<img src="preview.gif?v=24eb2a800e48" alt="AetherMite's dimensional idle animation" width="240">
+<img src="preview.gif?v=93af9b1c410e" alt="AetherMite's dimensional idle animation" width="240">
 
 *A premium dimensional Humidity Intelligence champion with a layered mechanical shell and luminous environmental core.*
 
 [**Install AetherMite**](https://senyo888.github.io/codex-pets/install/aethermite/)
 
 </div>
+
+[View the static idle preview](preview.png)
 
 ## Personality
 

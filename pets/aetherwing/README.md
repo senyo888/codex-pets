@@ -4,13 +4,15 @@
 
 **Pet 002 · The Runtime Sentinel**
 
-<img src="preview.gif?v=7d8ee08c4885" alt="AetherWing's calm idle animation" width="240">
+<img src="preview.gif?v=cf75c61eac81" alt="AetherWing's calm idle animation" width="240">
 
 *A flight-first guardian of deterministic control, architectural discipline, and truth-backed runtime behaviour.*
 
 [**Install AetherWing**](https://senyo888.github.io/codex-pets/install/aetherwing/)
 
 </div>
+
+[View the static idle preview](preview.png)
 
 ## Personality
 

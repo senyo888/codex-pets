@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a crisp six-frame idle GIF from a validated Codex v2 atlas."""
+"""Render a six-frame idle GIF and matching still from a validated Codex v2 atlas."""
 
 from __future__ import annotations
 
@@ -13,7 +13,9 @@ from PIL import Image, ImageSequence
 ATLAS_SIZE = (1536, 2288)
 CELL_SIZE = (192, 208)
 IDLE_FRAME_COUNT = 6
-IDLE_DURATIONS = [280, 110, 110, 140, 140, 320]
+# Desktop renderer observed in 26.930.21537: base idle holds multiplied by six.
+# Presentation timing only; pet.json cannot override the app's animation timing.
+IDLE_DURATIONS = [1680, 660, 660, 840, 840, 1920]
 DEFAULT_ALPHA_THRESHOLD = 192
 DEFAULT_SCALE = 2
 
@@ -132,6 +134,9 @@ def main() -> None:
     )
 
     result = validate_preview(output, args.scale)
+    with Image.open(output) as preview:
+        preview.convert("RGBA").save(output.with_suffix(".png"))
+    result["stillOutput"] = str(output.with_suffix(".png"))
     result["spritesheet"] = str(spritesheet)
     result["alphaThreshold"] = args.alpha_threshold
     print(json.dumps(result, indent=2))

@@ -4,13 +4,15 @@
 
 **The 1 True Source**
 
-<img src="preview.gif?v=1d01e149813d" alt="Bella's dimensional idle animation" width="240">
+<img src="preview.gif?v=13ab61440ccc" alt="Bella's dimensional idle animation" width="240">
 
 *A premium dimensional crystalline coherence guardian with layered depth, graceful flight, and a precise eye for truth.*
 
 [**Install Bella**](https://senyo888.github.io/codex-pets/install/bella/)
 
 </div>
+
+[View the static idle preview](preview.png)
 
 ## Personality
 

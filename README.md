@@ -13,13 +13,13 @@ An independent community catalogue of custom animated pets for the Codex desktop
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-fbbf24?style=flat-square)
 [![Give Codex Pets a star on GitHub](https://img.shields.io/github/stars/senyo888/codex-pets?style=flat-square&logo=github&label=Give%20us%20a%20star&color=fbbf24)](https://github.com/senyo888/codex-pets)
 
-<a href="pets/bella/README.md"><img src="pets/bella/preview.gif?v=1d01e149813d" alt="Bella's dimensional idle animation" width="150"></a>
-<a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif?v=7d8ee08c4885" alt="AetherWing's calm idle animation" width="150"></a>
-<a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif?v=ec0aa941a348" alt="AetherCore's polished metallic idle animation" width="150"></a>
-<a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=24eb2a800e48" alt="AetherMite's dimensional idle animation" width="150"></a>
-<a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=1c09298b9c11" alt="Aetherbite's cinematic idle animation" width="150"></a>
-<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=73d2a0b50334" alt="Calian's calm idle animation" width="150"></a>
-<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=49db273a1e1a" alt="Scarlet's calm idle animation" width="150"></a>
+<a href="pets/bella/README.md"><img src="pets/bella/preview.gif?v=13ab61440ccc" alt="Bella's dimensional idle animation" width="150"></a>
+<a href="pets/aetherwing/README.md"><img src="pets/aetherwing/preview.gif?v=cf75c61eac81" alt="AetherWing's calm idle animation" width="150"></a>
+<a href="pets/aethercore/README.md"><img src="pets/aethercore/preview.gif?v=ea06dabe0655" alt="AetherCore's polished metallic idle animation" width="150"></a>
+<a href="pets/aethermite/README.md"><img src="pets/aethermite/preview.gif?v=93af9b1c410e" alt="AetherMite's dimensional idle animation" width="150"></a>
+<a href="pets/aetherbite/README.md"><img src="pets/aetherbite/preview.gif?v=a3774afdaa8a" alt="Aetherbite's cinematic idle animation" width="150"></a>
+<a href="pets/calian/README.md"><img src="pets/calian/preview.gif?v=422116aef0a3" alt="Calian's calm idle animation" width="150"></a>
+<a href="pets/scarlet/README.md"><img src="pets/scarlet/preview.gif?v=f88c094046c2" alt="Scarlet's calm idle animation" width="150"></a>
 
 ## [Bella](pets/bella/README.md) · [AetherWing](pets/aetherwing/README.md) · [AetherCore](pets/aethercore/README.md) · [AetherMite](pets/aethermite/README.md) · [Aetherbite](pets/aetherbite/README.md) · [Calian](pets/calian/README.md) · [Scarlet](pets/scarlet/README.md)
 
@@ -44,7 +44,11 @@ An independent community catalogue of custom animated pets for the Codex desktop
 | 006 | [**Calian**](pets/calian/README.md) | Calian isolates decisive faults and restores deliberate control with calm, methodical judgement. | Sprite v2 | Validated and ready |
 | 007 | [**Scarlet**](pets/scarlet/README.md) | Scarlet pairs vigilant drift tracing with propulsive follow-through, carrying every correction to verified closure beside Calian. | Sprite v2 | Validated and ready |
 
-Each companion has a distinct identity and animation language. Every animated preview above is rendered directly from its current validated atlas.
+Each companion has a distinct identity and animation language. Every animated preview above is derived from its current validated atlas and uses a
+6.6-second idle loop, matching the desktop renderer checked in version 26.930.21537.
+The website displays still images when reduced motion is requested; each pet README
+also links to a static preview.
+See [maintenance and compatibility checks](docs/MAINTENANCE.md).
 
 ### Calian and Scarlet — the sister act
 
@@ -117,6 +121,7 @@ codex-pets/
 │       ├── pet.json
 │       ├── spritesheet.webp
 │       ├── preview.gif
+│       ├── preview.png
 │       ├── README.md
 │       └── qa/
 ├── site/

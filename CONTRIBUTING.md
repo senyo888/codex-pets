@@ -46,6 +46,7 @@ the gap is clear before you build the pull request.
    ```text
    pets/<pet-id>/
    site/assets/<pet-id>-preview.gif
+   site/assets/<pet-id>-preview.png
    site/install/<pet-id>/index.html
    catalog.json
    README.md
@@ -95,6 +96,7 @@ pets/<pet-id>/
 ├── pet.json
 ├── spritesheet.webp
 ├── preview.gif
+├── preview.png
 ├── README.md
 └── qa/
     ├── contact-sheet.png
@@ -178,15 +180,20 @@ python3 scripts/render_idle_preview.py \
   --output "pets/${PET_ID}/preview.gif"
 ```
 
-The command requires Python 3 and Pillow. The renderer preserves the standard idle
-timing, creates a `384 × 416` 2x presentation asset for clean browser downsampling, and
+The command requires Python 3 and Pillow; follow the [development setup](docs/MAINTENANCE.md).
+It renders a 6.6-second desktop-paced idle loop and matching static PNG at
+`384 × 416` size for clean browser downsampling (`--scale 1` uses native cells), and
 uses a deterministic alpha cutoff before GIF encoding. This prevents GIF's binary
 transparency from turning faint edge pixels into a grainy fringe. Copy the resulting
-preview to `site/assets/` when the pet is shown in the public catalogue.
+GIF and PNG to `site/assets/` when the pet is shown in the public catalogue.
+Use a `<picture>` source with `media="(prefers-reduced-motion: reduce)"` for the PNG
+on each website card and installer. The static image must equal GIF frame zero.
+Run `python3 scripts/validate_previews.py` in the activated development environment.
 
 The cache token is the first 12 lowercase characters of the exact referenced preview
 file's SHA-256. Package README references hash `pets/<pet-id>/preview.gif`; website and
-installer references hash `site/assets/<pet-id>-preview.gif`. The two previews may
+installer references hash `site/assets/<pet-id>-preview.gif` and the corresponding
+PNG separately. Package and site previews may
 differ after documented presentation-only cleanup.
 
 ## Change matrix
