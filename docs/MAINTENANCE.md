@@ -96,6 +96,34 @@ If a real credential is found, revoke or rotate it and investigate its exposure.
 Removing the current file does not remove it from history. Review any required
 history remediation explicitly rather than adding a blanket allowlist.
 
+## Code scanning and vulnerability reporting
+
+GitHub CodeQL uses managed default setup for Python and GitHub Actions, with the
+security-extended query suite and both remote and local input sources enabled.
+Local sources matter here because the maintenance tools consume contributed files
+and command-line arguments. GitHub manages the analysis workflow; there is no
+repository-owned CodeQL workflow file to keep in sync.
+
+Review the configuration under **Settings → Advanced Security → CodeQL analysis**
+and inspect runs and findings under
+[Code scanning](https://github.com/senyo888/codex-pets/security/code-scanning).
+After changing the configuration, verify a successful analysis for both languages
+on the intended commit. An enabled setting alone does not establish scan coverage.
+See [GitHub's default setup documentation](https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/configure-code-scanning/configure-code-scanning)
+for managed scan behaviour.
+
+CodeQL complements the Gitleaks workflow, dependency alerts, and image regression
+checks. It does not validate artwork or exercise installed desktop behaviour.
+Triage findings against their reachable inputs and impact before changing code or
+dismissing an alert.
+
+Private vulnerability reporting is enabled. Follow the root
+[security policy](../SECURITY.md) to report an issue privately and include the
+affected revision and a minimal reproduction.
+
+These configuration and documentation changes do not require another release tag
+or a pet package version change. Keep the published `v1.0.1` release unchanged.
+
 ## Version assessment
 
 These security changes are repository tooling and CI maintenance. They do not alter

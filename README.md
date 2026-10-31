@@ -153,6 +153,9 @@ New pets are welcome. [Start a guided submission](https://github.com/senyo888/co
 See [maintenance and security checks](docs/MAINTENANCE.md) for the pinned image
 dependency, input limits, and local secret scanning.
 
+For vulnerability reports, use the private reporting channel in the
+[security policy](SECURITY.md).
+
 ## License
 
 The pet artwork, animations, previews, and repository documentation are available under the [Creative Commons Attribution 4.0 International License](LICENSE).
