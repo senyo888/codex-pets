@@ -1,0 +1,4 @@
+title = "Codex Pets secret detection"
+
+[extend]
+useDefault = true

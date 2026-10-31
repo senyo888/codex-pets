@@ -18,7 +18,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
-from PIL import Image, ImageDraw, ImageFilter, ImageSequence
+from PIL import Image, ImageDraw, ImageFilter
+
+from image_safety import MAX_PREVIEW_BYTES, load_preview, load_static_image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -133,17 +135,14 @@ def union_bbox(frames: Iterable[Image.Image]) -> tuple[int, int, int, int]:
 
 def load_pet_frames(pet: dict, placement: Placement) -> list[Image.Image]:
     preview_path = ROOT / pet["previewPath"]
-    with Image.open(preview_path) as source:
-        frames = [frame.convert("RGBA") for frame in ImageSequence.Iterator(source)]
-    if len(frames) != 6:
-        raise SystemExit(
-            f"expected 6 tracked preview frames for {pet['id']}, found {len(frames)}"
-        )
+    frames = load_preview(preview_path).frames
 
     bbox = union_bbox(frames)
     crop_width = bbox[2] - bbox[0]
     crop_height = bbox[3] - bbox[1]
     target_width = round(placement.visible_height * crop_width / crop_height)
+    if not 1 <= placement.visible_height <= HEIGHT or not 1 <= target_width <= WIDTH:
+        raise SystemExit("preview visible aspect ratio exceeds the header canvas")
     return [
         frame.crop(bbox).resize(
             (target_width, placement.visible_height), Image.Resampling.LANCZOS
@@ -476,8 +475,9 @@ def main() -> int:
     args = parse_args()
     catalogue = load_catalogue()
     logo_path = ROOT / "site" / "assets" / "brand" / "codex-pets-logo.png"
-    with Image.open(logo_path) as logo_source:
-        logo = logo_source.convert("RGBA")
+    logo = load_static_image(
+        logo_path, formats=["PNG"], max_bytes=MAX_PREVIEW_BYTES, max_size=(2048, 2048),
+    )
     frames = build_frames(catalogue, logo)
     animation_path, static_path = save_outputs(frames, args.output_dir)
     print(

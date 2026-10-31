@@ -69,17 +69,25 @@ the gap is clear before you build the pull request.
    python3 -m json.tool "pets/${PET_ID}/qa/validation-summary.json" >/dev/null
    python3 -m json.tool catalog.json >/dev/null
    python3 scripts/validate_catalog.py
+   python3 scripts/validate_previews.py
+   python3 scripts/test_image_safety.py
+   python3 scripts/scan_secrets.py
    shasum -a 256 "pets/${PET_ID}/spritesheet.webp"
    git diff --check
    ```
 
-   The preview renderer requires Python 3 and Pillow. The tracked catalogue validator
+   The preview renderer requires Python 3.12 or newer and the pinned Pillow dependency
+   from the [development setup](docs/MAINTENANCE.md). The tracked catalogue validator
    is the canonical consistency check used locally and in pull requests. It checks the
    package, root README, website cards, preview cache tokens, and installer semantics.
    The renderer checks the v2 atlas
    dimensions and alpha channel while producing the public GIF. Maintainers confirm
    the full animation-row, direction, continuity, checksum, and catalogue checks
    during review.
+
+   Secret scanning requires Gitleaks 8.30.1; see the
+   [installation and scan instructions](docs/MAINTENANCE.md#secret-scanning).
+   It checks available history and public working files, including new untracked files.
 
 5. Push your branch and open a pull request. The repository pull request template
    contains the final package and review checklist.
@@ -180,7 +188,8 @@ python3 scripts/render_idle_preview.py \
   --output "pets/${PET_ID}/preview.gif"
 ```
 
-The command requires Python 3 and Pillow; follow the [development setup](docs/MAINTENANCE.md).
+The command requires Python 3.12 or newer and the pinned Pillow dependency;
+follow the [development setup](docs/MAINTENANCE.md).
 It renders a 6.6-second desktop-paced idle loop and matching static PNG at
 `384 × 416` size for clean browser downsampling (`--scale 1` uses native cells), and
 uses a deterministic alpha cutoff before GIF encoding. This prevents GIF's binary
@@ -189,6 +198,9 @@ GIF and PNG to `site/assets/` when the pet is shown in the public catalogue.
 Use a `<picture>` source with `media="(prefers-reduced-motion: reduce)"` for the PNG
 on each website card and installer. The static image must equal GIF frame zero.
 Run `python3 scripts/validate_previews.py` in the activated development environment.
+Atlases must be static PNG or WebP files up to 32 MiB. Generated previews support
+integer scales 1–4; each GIF and PNG must be no larger than 8 MiB. See the complete
+[image input limits](docs/MAINTENANCE.md#image-input-limits).
 
 The cache token is the first 12 lowercase characters of the exact referenced preview
 file's SHA-256. Package README references hash `pets/<pet-id>/preview.gif`; website and
@@ -240,6 +252,7 @@ Do not submit an unreviewed generated atlas, a flattened image without transpare
 - [ ] SHA-256 recorded in `catalog.json` and the validation summary
 - [ ] Decoded install link matches the canonical public HTTPS spritesheet URL and metadata
 - [ ] `python3 scripts/validate_catalog.py` passes
+- [ ] Preview, image safety, and Gitleaks checks pass
 - [ ] Desktop and 390 px mobile layouts, keyboard focus, and console output reviewed
 - [ ] Artwork is original or licensed for redistribution
 

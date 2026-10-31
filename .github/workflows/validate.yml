@@ -34,5 +34,8 @@ jobs:
       - name: Validate preview timing and still alternatives
         run: python3 scripts/validate_previews.py
 
+      - name: Verify image input resource boundaries
+        run: python3 scripts/test_image_safety.py
+
       - name: Check patch whitespace
         run: git diff --check "${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"

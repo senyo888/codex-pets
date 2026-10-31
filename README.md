@@ -150,6 +150,9 @@ See the [Pets documentation](https://learn.chatgpt.com/docs/pets?surface=app) fo
 
 New pets are welcome. [Start a guided submission](https://github.com/senyo888/codex-pets/issues/new?template=add-your-pet.yml) with an idea or partial package, or follow the [Add Your Pet guide](CONTRIBUTING.md#add-your-pet) and [catalogue contract](docs/CATALOG_CONTRACT.md) when a complete package is ready for a pull request.
 
+See [maintenance and security checks](docs/MAINTENANCE.md) for the pinned image
+dependency, input limits, and local secret scanning.
+
 ## License
 
 The pet artwork, animations, previews, and repository documentation are available under the [Creative Commons Attribution 4.0 International License](LICENSE).
