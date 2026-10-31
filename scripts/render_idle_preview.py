@@ -7,12 +7,15 @@ import argparse
 import json
 from pathlib import Path
 
-from PIL import Image, ImageSequence
+from PIL import Image
+
+from image_safety import (
+    CELL_SIZE, IDLE_FRAME_COUNT, MAX_ATLAS_BYTES, MAX_SCALE, Preview,
+    load_preview, load_static_image,
+)
 
 
 ATLAS_SIZE = (1536, 2288)
-CELL_SIZE = (192, 208)
-IDLE_FRAME_COUNT = 6
 # Desktop renderer observed in 26.930.21537: base idle holds multiplied by six.
 # Presentation timing only; pet.json cannot override the app's animation timing.
 IDLE_DURATIONS = [1680, 660, 660, 840, 840, 1920]
@@ -30,15 +33,14 @@ def threshold_alpha(frame: Image.Image, threshold: int) -> Image.Image:
 def load_idle_frames(
     spritesheet: Path, alpha_threshold: int, scale: int
 ) -> list[Image.Image]:
-    with Image.open(spritesheet) as opened:
-        if opened.size != ATLAS_SIZE:
-            raise SystemExit(
-                f"expected a {ATLAS_SIZE[0]}x{ATLAS_SIZE[1]} v2 atlas, "
-                f"found {opened.width}x{opened.height}"
-            )
-        if "A" not in opened.getbands():
-            raise SystemExit("spritesheet must contain an alpha channel")
-        atlas = opened.convert("RGBA")
+    if type(scale) is not int or not 1 <= scale <= MAX_SCALE:
+        raise SystemExit("--scale must be between 1 and 4")
+    if type(alpha_threshold) is not int or not 1 <= alpha_threshold <= 255:
+        raise SystemExit("--alpha-threshold must be between 1 and 255")
+    atlas = load_static_image(
+        spritesheet, formats=["WEBP", "PNG"], max_bytes=MAX_ATLAS_BYTES,
+        expected_size=ATLAS_SIZE, require_alpha=True,
+    )
 
     width, height = CELL_SIZE
     frames = []
@@ -51,34 +53,23 @@ def load_idle_frames(
     return frames
 
 
-def validate_preview(output: Path, scale: int) -> dict[str, object]:
-    output_size = tuple(dimension * scale for dimension in CELL_SIZE)
-    with Image.open(output) as opened:
-        frames = []
-        for frame in ImageSequence.Iterator(opened):
-            frames.append(
-                {
-                    "size": frame.size,
-                    "duration": frame.info.get("duration"),
-                    "disposal": getattr(frame, "disposal_method", None),
-                    "alphaExtrema": frame.convert("RGBA").getchannel("A").getextrema(),
-                }
-            )
-        loop = opened.info.get("loop")
-
-    if len(frames) != IDLE_FRAME_COUNT:
-        raise SystemExit(f"expected {IDLE_FRAME_COUNT} GIF frames, found {len(frames)}")
-    if [frame["duration"] for frame in frames] != IDLE_DURATIONS:
+def validate_preview_data(preview: Preview) -> None:
+    """Preserve the timing and transparency contract after bounded decoding."""
+    if preview.durations != IDLE_DURATIONS:
         raise SystemExit("rendered GIF durations do not match the idle timing contract")
-    if any(frame["size"] != output_size for frame in frames):
-        raise SystemExit("rendered GIF contains a frame with the wrong dimensions")
-    if any(frame["disposal"] != 2 for frame in frames):
+    if any(disposal != 2 for disposal in preview.disposals):
         raise SystemExit("rendered GIF must use restore-to-background disposal")
-    if any(frame["alphaExtrema"] != (0, 255) for frame in frames):
+    if any(frame.getchannel("A").getextrema() != (0, 255) for frame in preview.frames):
         raise SystemExit("rendered GIF must contain both transparent and opaque pixels")
-    if loop != 0:
+    if preview.loop != 0:
         raise SystemExit("rendered GIF must loop continuously")
 
+
+def validate_preview(output: Path, scale: int) -> dict[str, object]:
+    """Validate a bounded preview and retain the existing report contract."""
+    preview = load_preview(output, scale)
+    validate_preview_data(preview)
+    output_size = preview.frames[0].size
     return {
         "ok": True,
         "output": str(output),
@@ -87,7 +78,7 @@ def validate_preview(output: Path, scale: int) -> dict[str, object]:
         "scale": scale,
         "frames": IDLE_FRAME_COUNT,
         "durations": IDLE_DURATIONS,
-        "loop": loop,
+        "loop": preview.loop,
         "disposal": 2,
     }
 
@@ -134,8 +125,7 @@ def main() -> None:
     )
 
     result = validate_preview(output, args.scale)
-    with Image.open(output) as preview:
-        preview.convert("RGBA").save(output.with_suffix(".png"))
+    load_preview(output, args.scale).frames[0].save(output.with_suffix(".png"))
     result["stillOutput"] = str(output.with_suffix(".png"))
     result["spritesheet"] = str(spritesheet)
     result["alphaThreshold"] = args.alpha_threshold
